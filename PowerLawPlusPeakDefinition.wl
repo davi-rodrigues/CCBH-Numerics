@@ -8,13 +8,15 @@
   ******************************* 
 *)
 
-\[Beta][m1_, \[Alpha]_, mMin_, mMax_] =  Piecewise[
+\[Beta][m1_, \[Alpha]_, mMin_, mMax_] =  \[Beta]normalization m1^-\[Alpha];
+
+(*Piecewise[
   {
     {\[Beta]normalization m1^-\[Alpha], m1 <= mMax}, 
-    {0, m1 > mMax}
+    {0, m1 > mMax} (*This is innocous, if the maximum mass limit is implemented in the smoothing function.*)
   }
 ];
-
+*)
 \[Beta]normalization = k /. First @ Solve[
   Integrate[ k m1^-\[Alpha], {m1, mMin, mMax}, Assumptions->{\[Alpha]>0, mMin >0, mMax > mMin}] == 1, 
   k
@@ -22,6 +24,7 @@
 
 smoothing[m_, mMin_, \[Delta]m_] = Piecewise[{
   {0, m < mMin}, 
+  {0, m > mMax}, (*This condition is not described in the population paper, in practice is irrelevant, but fundamentally it makes sense.*)
   {1/(ff[m-mMin, \[Delta]m]+1), mMin <= m < mMin+\[Delta]m}, 
   {1, m >= mMin + \[Delta]m}
 }];
@@ -38,17 +41,6 @@ Options[powerLawPeak] = {
   \[Mu]m -> 33.07,
   \[Sigma]m -> 5.69
 }; (*From Fig. 16 of GWTC-2 populations paper, 2010.14533*)
-
-(*Options[powerLawPeak] = {
-  \[Lambda] -> 0.05,
-  \[Alpha] -> 3.3,
-  mMin -> 4.59,
-  \[Delta]m -> 4.82,
-  mMax -> 100,
-  \[Mu]m -> 33.07,
-  \[Sigma]m -> 5.69
-};
-*) (*Values with Sumit*)
 
 powerLawPeak[m1_, OptionsPattern[]] := Block[
   {
