@@ -7,6 +7,9 @@
 # PDFs 
 *.pdf
 
+#OLD folder
+OLD/
+
 #### Below files were generated automatically for Python projects
 
 # Byte-compiled / optimized / DLL files
