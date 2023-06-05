@@ -58,16 +58,16 @@ posBNSlines = Block[{pos},
   pos = Position[datasetGWpop, "BNS"];
   Partition[pos[[All,1]], 1]
 ];
-Echo[bnsEvents, "BNS events: "];
-Echo[posBNSlines, "BNS line positions in datasetGWpop: "];
+(* Echo[bnsEvents, "BNS events: "];
+Echo[posBNSlines, "BNS line positions in datasetGWpop: "]; *)
 
 bhnsEvents = Cases[datasetGWpop, {_, "BHNS"} ][All,1] // Normal;
 posBHNSlines = Block[{pos}, 
   pos = Position[datasetGWpop, "BHNS"];
   Partition[pos[[All,1]], 1]
 ];
-Echo[bhnsEvents, "BHNS events: "];
-Echo[posBHNSlines, "BHNS line positions in datasetGWpop: "];
+(* Echo[bhnsEvents, "BHNS events: "];
+Echo[posBHNSlines, "BHNS line positions in datasetGWpop: "]; *)
 
 Echo[
   posNeglected = Join[posBNSlines, {{pos200105}, {pos190426}}],  (*These two events do not appear in GWTC-3, since their p_astro is too small*)

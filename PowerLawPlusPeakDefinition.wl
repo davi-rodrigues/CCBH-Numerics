@@ -6,63 +6,70 @@
 (*
   POWER-LAW-PLUS-PEAK DEFINITION
   ******************************* 
+  Davi C. Rodrigues (2023)
+  
+  Based on 
+  * Talbot & Thrane ApJ 2018 (Measuring the binary black hole mass spectrum...)
+  * Abbott et al ApJ 2021 (Population properties of Compact Objects...)
 *)
 
-\[Beta][m1_, \[Alpha]_, mMin_, mMax_] =  \[Beta]normalization m1^-\[Alpha];
+Begin["plpp`"];
 
-(*Piecewise[
-  {
-    {\[Beta]normalization m1^-\[Alpha], m1 <= mMax}, 
-    {0, m1 > mMax} (*This is innocous, if the maximum mass limit is implemented in the smoothing function.*)
-  }
-];
-*)
-\[Beta]normalization = k /. First @ Solve[
-  Integrate[ k m1^-\[Alpha], {m1, mMin, mMax}, Assumptions->{\[Alpha]>0, mMin >0, mMax > mMin}] == 1, 
+b[m_, a_, mMin_, mMax_] =  bNorm[a, mMin, mMax] m^-a;
+
+bNorm[a_, mMin_, mMax_] = k /. First @ Solve[
+  Integrate[ k m^-a, {m, mMin, mMax}, Assumptions->{a>0, mMin >0, mMax > mMin}] == 1, 
   k
 ];
 
-smoothing[m_, mMin_, \[Delta]m_] = Piecewise[{
+smoothing[m_, mMin_, mMax_, dm_] = Piecewise[{
   {0, m < mMin}, 
-  {0, m > mMax}, (*This condition is not described in the population paper, in practice is irrelevant, but fundamentally it makes sense.*)
-  {1/(ff[m-mMin, \[Delta]m]+1), mMin <= m < mMin+\[Delta]m}, 
-  {1, m >= mMin + \[Delta]m}
+  {0, m > mMax}, (*It is convenient to implement the maximum mass in this function.*)
+  {1/(ff[m-mMin, dm]+1), mMin <= m < mMin+dm}, 
+  {1, m >= mMin + dm}
 }];
 
-ff[m_,\[Delta]m_] = Exp[\[Delta]m/m + \[Delta]m/(m-\[Delta]m)];
+ff[m_,dm_] = Exp[dm/m + dm/(m-dm)];
 
-ClearAll[powerLawPeak];
-Options[powerLawPeak] = {
-  \[Lambda] -> 0.10,
-  \[Alpha] -> 2.63,
+Clear[plpp];
+Options[plpp] = {
+  a -> 2.63,
   mMin -> 4.59,
-  \[Delta]m -> 4.82,
+  dm -> 4.82,
   mMax -> 86.22,
-  \[Mu]m -> 33.07,
-  \[Sigma]m -> 5.69
-}; (*From Fig. 16 of GWTC-2 populations paper, 2010.14533*)
+  mu -> 33.07,
+  s -> 5.69,
+  l -> 0.10
+}; (*From Fig. 16 of Abbott et al ApJ 2021*)
 
-powerLawPeak[m1_, OptionsPattern[]] := Block[
+Clear[piUnnorm, piNorm, pi];
+pi::usage = "pi[m, options] from the PLPP context is the (normalized) PDF of the power-law-plus-peak distribution.";
+piUnnorm::usage = "piUnnorm[m, options] from the PLPP context is the unnormalized PDF of the power-law-plus-peak distribution.";
+piNorm::usage = "piNorm[options] from the PLPP context is the normalization factor.";
+
+piUnnorm[m_, OptionsPattern[plpp]] = Block[
   {
-    \[Lambda] = OptionValue @ \[Lambda],
-    \[Alpha] = OptionValue @ \[Alpha],
-    mMin = OptionValue @ mMin,
-    \[Delta]m = OptionValue @ \[Delta]m,
-    mMax = OptionValue @ mMax,
-    \[Mu]m = OptionValue @ \[Mu]m,
-    \[Sigma]m = OptionValue @ \[Sigma]m,
-    nBHs = 1,
-    plp,
-    normalization,
-    m 
+    lV = OptionValue @ l,
+    aV = OptionValue @ a,
+    mMinV = OptionValue @ mMin,
+    dmV = OptionValue @ dm,
+    mMaxV = OptionValue @ mMax,
+    muV = OptionValue @ mu,
+    sV = OptionValue @ s 
   },
-  10^3 ((1 - \[Lambda]) \[Beta][m1, \[Alpha], mMin, mMax] + \[Lambda] PDF[NormalDistribution[\[Mu]m, \[Sigma]m], m1]) smoothing[m1, mMin, \[Delta]m]  
-  (*Unnormalized version, faster, 10^3 is arbitrary. Normalization comes later.*)
+  10^3 ((1 - lV) b[m, aV, mMinV, mMaxV] + lV PDF[NormalDistribution[muV, sV], m]) smoothing[m, mMinV, mMaxV, dmV]  
 ];
+piNorm[opts:OptionsPattern[plpp]] := piNorm[opts] = 1/NIntegrate[piUnnorm[m, opts], {m, 0,OptionValue@mMax}];
+pi[m_, opts:OptionsPattern[plpp]] := pi[m, opts] = piNorm[opts] piUnnorm[m, opts];
 
-plpNormalization = NIntegrate[powerLawPeak[m1], {m1, 0,200}]; (*The PDF becomes 0 after mMax, hence the normalization can be computed with high mMax.*)
-\[ScriptCapitalD]plp = ProbabilityDistribution[powerLawPeak[m1]/ plpNormalization, {m1, 0, 100}];
+Clear[dist, \[ScriptCapitalD]];
+dist::usage = "dist[options] or \[ScriptCapitalD][options] from the PLPP context stands for the PLPP distribution";
+dist[opts:OptionsPattern[plpp]] := dist[opts] = ProbabilityDistribution[pi[m, opts], {m, 0, OptionValue@mMax}];
+\[ScriptCapitalD][opts:OptionsPattern[plpp]] := dist[opts];
 
-Echo[NProbability[200>m>0, m \[Distributed] \[ScriptCapitalD]plp], "Probability of 0<m1<200: "];
+Remove[k, lV, aV, mMinV, mMaxV, dmV, muV, sV];
 
-(*Row[{Plot[PDF[\[ScriptCapitalD]plp, m1], {m1, 0, 100}, PlotRange->All, ImageSize-> Medium], LogPlot[PDF[\[ScriptCapitalD]plp, m1], {m1, 0, 100}, ImageSize-> Medium]}]*) 
+End[];
+
+optionsPlpp = Options[plpp`plpp];
+Echo["","Use plpp`pi[m, options] for the power-law-plus-peak PDF and plpp`\[ScriptCapitalD][options] for the distribution. Use optionsPlpp to see the options."];
