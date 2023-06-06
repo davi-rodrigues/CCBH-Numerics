@@ -17,9 +17,11 @@ Begin["plpp`"];
 
 b[m_, a_, mMin_, mMax_] =  bNorm[a, mMin, mMax] m^-a;
 
-bNorm[a_, mMin_, mMax_] = k /. First @ Solve[
-  Integrate[ k m^-a, {m, mMin, mMax}, Assumptions->{a>0, mMin >0, mMax > mMin}] == 1, 
-  k
+bNorm[a_, mMin_, mMax_] = Block[{k}, 
+  k /. First @ Solve[
+    Integrate[ k m^-a, {m, mMin, mMax}, Assumptions->{a>0, mMin >0, mMax > mMin}] == 1, 
+    k
+  ]
 ];
 
 smoothing[m_, mMin_, mMax_, dm_] = Piecewise[{
@@ -67,7 +69,7 @@ dist::usage = "dist[options] or \[ScriptCapitalD][options] from the PLPP context
 dist[opts:OptionsPattern[plpp]] := dist[opts] = ProbabilityDistribution[pi[m, opts], {m, 0, OptionValue@mMax}];
 \[ScriptCapitalD][opts:OptionsPattern[plpp]] := dist[opts];
 
-Remove[k, lV, aV, mMinV, mMaxV, dmV, muV, sV];
+Remove[lV, aV, mMinV, mMaxV, dmV, muV, sV];
 
 End[];
 
