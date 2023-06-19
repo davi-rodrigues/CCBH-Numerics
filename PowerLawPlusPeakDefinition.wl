@@ -34,7 +34,7 @@ smoothing[m_, mMin_, mMax_, dm_] = Piecewise[{
 ff[m_,dm_] = Exp[dm/m + dm/(m-dm)];
 
 Clear[plpp];
-Options[plpp] = {
+(* Options[plpp] = {
   a -> 2.63,
   mMin -> 4.59,
   dm -> 4.82,
@@ -42,7 +42,18 @@ Options[plpp] = {
   mu -> 33.07,
   s -> 5.69,
   l -> 0.10
-}; (*From Fig. 16 of Abbott et al ApJ 2021*)
+}; From Fig. 16 of Abbott et al ApJ 2021 *)
+
+Options[plpp] = {
+  a -> 3.549,
+  mMin -> 4.816,
+  dm -> 5.454,
+  mMax -> 83.140,
+  mu -> 34.467,
+  s -> 1.867,
+  l -> 0.019,
+  betaQ -> 0.760
+}; (*Best fit from Sumit*)
 
 Clear[piUnnorm, piNorm, pi];
 pi::usage = "pi[m, options] from the PLPP context is the (normalized) PDF of the power-law-plus-peak distribution.";
