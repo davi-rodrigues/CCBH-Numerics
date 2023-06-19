@@ -129,11 +129,11 @@ mXzData1 = datasetGWTrelev[All, {"redshift", "redshift_lower","redshift_upper", 
 mXzDataForPlotting1 = {Around[#1, {#2, #3}], Around[#4, {#5, #6}]} & @@@ mXzData1;
 
 (*For mXzData2, we remove the NS data from the BHNS event*)
-(*
-  mXzData2= Delete[datasetGWTrelev[All, {"redshift", "redshift_lower","redshift_upper" , "mass_2_source","mass_2_source_lower", "mass_2_source_upper"}][Values, Values], posBHNSselectLines] // Normal;
-  mXzDataForPlotting2= {Around[#1,{#2, #3}],Around[#4,{#5,#6}]}& @@@ mXzData2;
-  mXzDataForPlotting = Join[mXzDataForPlotting1,mXzDataForPlotting2];
-*)
+
+mXzData2= Delete[datasetGWTrelev[All, {"redshift", "redshift_lower","redshift_upper" , "mass_2_source","mass_2_source_lower", "mass_2_source_upper"}][Values, Values], posBHNSselectLines] // Normal;
+mXzDataForPlotting2= {Around[#1,{#2, #3}],Around[#4,{#5,#6}]}& @@@ mXzData2;
+(* mXzDataForPlotting = Join[mXzDataForPlotting1,mXzDataForPlotting2]; *)
+
 
 mXzDataForPlotting = mXzDataForPlotting1; (*Selects only m1 data.*)
 plotZxM = mzListPlot[
