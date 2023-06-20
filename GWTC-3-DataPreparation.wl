@@ -1,8 +1,8 @@
 (* 
-  Cosmologically Coupled Black Holes - Prelude code
-
-  Davi C. Rodrigues (this code)
-  2023
+  GWTC-3 Data Preparation
+  This is part of the Cosmologically Coupled Black Holes code
+  
+  Davi C. Rodrigues (2023)
 *)
 
 
@@ -37,15 +37,20 @@ datasetGWpop = datasetGWpopExtended; (*Only uses the extended version*)
   Complement[datasetGWpop[All,1] // Normal, gwtcEvents], 
   "Event that is in gwPopEvents, but not in gwtcEvents: "
 ];*)
-Echo[
+
+pos200105 = Position[datasetGWpop,"GW200105_162426"] // First // First;
+
+(* Echo[
   pos200105 = Position[datasetGWpop,"GW200105_162426"] // First // First, 
   "Event that is in gwPopEvents, but not in gwtcEvents (pos200105): "
-];
+]; *)
 
-Echo[
+pos190426 = Position[datasetGWpop,"GW190426_152155"] // First // First;
+
+(* Echo[
   pos190426 = Position[datasetGWpop,"GW190426_152155"] // First // First, 
   "Event that is in gwPopEvents, but not in gwtcEvents (pos190426): "
-];
+]; *)
 
 (*
   There are two events that are in 2111.03634, but not in the gtw-3 provided data. 
@@ -69,10 +74,12 @@ posBHNSlines = Block[{pos},
 (* Echo[bhnsEvents, "BHNS events: "];
 Echo[posBHNSlines, "BHNS line positions in datasetGWpop: "]; *)
 
-Echo[
+posNeglected = Join[posBNSlines, {{pos200105}, {pos190426}}];  (*These two events do not appear in GWTC-3, since their p_astro is too small*)
+
+(* Echo[
   posNeglected = Join[posBNSlines, {{pos200105}, {pos190426}}],  (*These two events do not appear in GWTC-3, since their p_astro is too small*)
   "datasetGWpop lines to be neglected: "
-];
+]; *)
 
 (*
   PREPARING THE DATA: Defining the relevant dataset by removing the unnecessary events
