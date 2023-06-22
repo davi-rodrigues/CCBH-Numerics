@@ -11,6 +11,7 @@
   Based on 
   * Talbot & Thrane ApJ 2018 (Measuring the binary black hole mass spectrum...)
   * Abbott et al ApJ 2021 (Population properties of Compact Objects...)
+  * Abbott et al PRX 2023 (Population of merging...)
 *)
 
 Begin["plpp`"];
@@ -53,7 +54,7 @@ Options[plpp] = {
   s -> 1.867,
   l -> 0.019,
   betaQ -> 0.760
-}; (*Best fit from Sumit*)
+}; (*Best values computed by Sumit Kumar based on GWTC-3, Abbott et al PRX 2023.*)
 
 Clear[piUnnorm, piNorm, pi];
 pi::usage = "pi[m, options] from the PLPP context is the (normalized) PDF of the power-law-plus-peak distribution.";
