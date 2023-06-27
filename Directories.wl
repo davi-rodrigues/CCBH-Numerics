@@ -19,16 +19,20 @@ exportOut[fileName_, variable_] := (
   Export[FileNameJoin[{pathOut, fileName}], variable];
   "pathOut/"<>fileName
 );
+
 exportAux[fileName_, variable_] := (
   Export[FileNameJoin[{pathAux, fileName}], variable];
   "pathAux/"<>fileName
 );
+
 SetAttributes[dumpsave, HoldRest];
 dumpsave[fileName_, variable_] := (
   DumpSave[FileNameJoin[{pathAux, fileName}], variable];
   "pathAux/"<>fileName
 );
+
 getAux[fileName_] := Get[FileNameJoin[{pathAux, fileName}]];
+
 getCode[fileName_] := (
   Print["Starting "<>ToString[fileName]<> ": "]; 
   Get[FileNameJoin[{pathCodes, fileName}]]

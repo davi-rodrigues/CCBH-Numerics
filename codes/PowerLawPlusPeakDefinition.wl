@@ -81,6 +81,8 @@ dist::usage = "dist[options] or \[ScriptCapitalD][options] from the PLPP context
 dist[opts:OptionsPattern[plpp]] := dist[opts] = ProbabilityDistribution[pi[m, opts], {m, 0, OptionValue@mMax}];
 \[ScriptCapitalD][opts:OptionsPattern[plpp]] := dist[opts];
 
+dist2[opts:OptionsPattern[plpp]] := dist2[opts] = ProbabilityDistribution[piUnnorm[m, opts], {m, 0, OptionValue@mMax}];
+
 Remove[lV, aV, mMinV, mMaxV, dmV, muV, sV];
 
 End[];
