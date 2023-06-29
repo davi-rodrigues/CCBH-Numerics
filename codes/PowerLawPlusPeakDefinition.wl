@@ -94,20 +94,20 @@ dist[opts:OptionsPattern[plpp]] := dist[opts] = ProbabilityDistribution[pi[m, op
 piM2M1[m2_, m1_, opts:OptionsPattern[plpp]] := (m2/m1)^OptionValue@betaQ smoothing[m2, OptionValue@mMin, OptionValue@mMax, OptionValue@dm] HeavisideTheta[m1-m2]; (*PDF for M2 given M1*)
 
 piM2M1normFactor[m1_?NumberQ]:= piM2M1normFactor[m1] = 1/NIntegrate[piM2M1[m2, m1], {m2, 1, 100},
-  PrecisionGoal->3, 
+  PrecisionGoal-> 3, 
   MaxRecursion -> 12, 
-  AccuracyGoal -> 10
-  (*Method -> {Automatic, "SymbolicProcessing" -> 0}*)
+  AccuracyGoal -> 10,
+  Method -> {Automatic, "SymbolicProcessing" -> 5}
 ]
 
 piM2[m2_] := NIntegrate[piM2M1[m2, m1] piM2M1normFactor[m1] pi[m1], {m1, m2, 100}, 
-  PrecisionGoal->4, 
+  PrecisionGoal -> 3, 
   MaxRecursion -> 12, 
   AccuracyGoal -> 10, 
   Method -> {Automatic, "SymbolicProcessing" -> 0}
 ];
 
-listPiM2 := listPiM2 = ParallelMap[{#, piM2[#]} &, Range[1, 100, 0.5]];
+listPiM2 := listPiM2 = Map[{#, piM2[#]} &, Range[1, 100, 0.5]];
 
 piM2I := piM2I = Interpolation[listPiM2];
 
