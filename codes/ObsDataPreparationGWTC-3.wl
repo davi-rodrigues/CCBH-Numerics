@@ -101,6 +101,21 @@ posBHNSselectLines = Block[{pos},
 datasetGWTCnoV = datasetGWTC[KeyMap[#/. x_ :>  StringReplace[x, "-v"~~_ -> ""] & , #]&];
 datasetGWTrelev = datasetGWTCnoV[datasetGWpopSelec[All,1] // Normal] 
 
+dataGWexport = datasetGWTrelev[All, 
+  {
+    "redshift", 
+    "redshift_lower", 
+    "redshift_upper", 
+    "mass_1_source", 
+    "mass_1_source_lower", 
+    "mass_1_source_upper", 
+    "mass_2_source", 
+    "mass_2_source_lower", 
+    "mass_2_source_upper"
+  }
+];
+
+(* exportOut["dataGWexport.csv", dataGWexport]; *) (*Uncomment this to export the table.*)
 
 (*
   OBSERVATIONAL DATA: PREPARING AND PLOTTING
@@ -124,7 +139,7 @@ plot1=datasetGWTrelev[All, {"redshift", "mass_1_source"}]//Values // mzListPlot;
 plot2 = mzListPlot[datasetGWTrelev[All, {"redshift", "mass_2_source"}]//Values , 
   PlotMarkers->Graphics[{Blue, Opacity[0.6],Disk[]}, ImageSize -> 11, ImagePadding->1]
 ];
-Show[plot1,plot2]
+(* Show[plot1,plot2] *)
 
 
 (*
@@ -135,9 +150,9 @@ Show[plot1,plot2]
 mXzData1 = datasetGWTrelev[All, {"redshift", "redshift_lower","redshift_upper", "mass_1_source","mass_1_source_lower", "mass_1_source_upper"}][Values, Values] // Normal;
 mXzDataForPlotting1 = {Around[#1, {#2, #3}], Around[#4, {#5, #6}]} & @@@ mXzData1;
 
-(*For mXzData2, we remove the NS data from the BHNS event*)
+(*For mXzData2, we Do NOT remove the NS data from the BHNS event, use Delete[...., posBHNSselectLines] to do that.*)
 
-mXzData2= Delete[datasetGWTrelev[All, {"redshift", "redshift_lower","redshift_upper" , "mass_2_source","mass_2_source_lower", "mass_2_source_upper"}][Values, Values], posBHNSselectLines] // Normal;
+mXzData2= datasetGWTrelev[All, {"redshift", "redshift_lower","redshift_upper" , "mass_2_source","mass_2_source_lower", "mass_2_source_upper"}][Values, Values] // Normal;
 mXzDataForPlotting2= {Around[#1,{#2, #3}],Around[#4,{#5,#6}]}& @@@ mXzData2;
 (* mXzDataForPlotting = Join[mXzDataForPlotting1,mXzDataForPlotting2]; *)
 
