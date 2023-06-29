@@ -56,6 +56,11 @@ Options[plpp] = {
   betaQ -> 0.760
 }; (*Best values computed by Sumit Kumar based on GWTC-3, Abbott et al PRX 2023.*)
 
+(*
+  m1 PDF and distribution
+  ***********************
+*)
+
 Clear[piUnnorm, piNorm, pi];
 pi::usage = "pi[m, options] from the PLPP context is the (normalized) PDF of the power-law-plus-peak distribution.";
 piUnnorm::usage = "piUnnorm[m, options] from the PLPP context is the unnormalized PDF of the power-law-plus-peak distribution.";
@@ -69,9 +74,9 @@ piUnnorm[m_, OptionsPattern[plpp]] = Block[
     dmV = OptionValue @ dm,
     mMaxV = OptionValue @ mMax,
     muV = OptionValue @ mu,
-    sV = OptionValue @ s 
+    sV = OptionValue @ s
   },
-  10^3 ((1 - lV) b[m, aV, mMinV, mMaxV] + lV PDF[NormalDistribution[muV, sV], m]) smoothing[m, mMinV, mMaxV, dmV]  
+  10^3 ((1 - lV) b[m, aV, mMinV, mMaxV] + lV PDF[NormalDistribution[muV, sV], m]) smoothing[m, mMinV, mMaxV, dmV]
 ];
 piNorm[opts:OptionsPattern[plpp]] := piNorm[opts] = 1/NIntegrate[piUnnorm[m, opts], {m, 0,OptionValue@mMax}];
 pi[m_, opts:OptionsPattern[plpp]] := pi[m, opts] = piNorm[opts] piUnnorm[m, opts];
@@ -81,11 +86,70 @@ dist::usage = "dist[options] or \[ScriptCapitalD][options] from the PLPP context
 dist[opts:OptionsPattern[plpp]] := dist[opts] = ProbabilityDistribution[pi[m, opts], {m, 0, OptionValue@mMax}];
 \[ScriptCapitalD][opts:OptionsPattern[plpp]] := dist[opts];
 
-dist2[opts:OptionsPattern[plpp]] := dist2[opts] = ProbabilityDistribution[piUnnorm[m, opts], {m, 0, OptionValue@mMax}];
+(*
+  m2 PDF and distribution
+  ***********************
+*)
+
+piM2M1[m2_, m1_, opts:OptionsPattern[plpp]] := (m2/m1)^OptionValue@betaQ smoothing[m2, OptionValue@mMin, OptionValue@mMax, OptionValue@dm] HeavisideTheta[m1-m2]; (*PDF for M2 given M1*)
+
+piM2M1normFactor[m1_?NumberQ]:= piM2M1normFactor[m1] = 1/NIntegrate[piM2M1[m2, m1], {m2, 1, 100},
+  PrecisionGoal->3, 
+  MaxRecursion -> 12, 
+  AccuracyGoal -> 10
+  (*Method -> {Automatic, "SymbolicProcessing" -> 0}*)
+]
+
+piM2[m2_] := NIntegrate[piM2M1[m2, m1] piM2M1normFactor[m1] pi[m1], {m1, m2, 100}, 
+  PrecisionGoal->4, 
+  MaxRecursion -> 12, 
+  AccuracyGoal -> 10, 
+  Method -> {Automatic, "SymbolicProcessing" -> 0}
+];
+
+listPiM2 := listPiM2 = ParallelMap[{#, piM2[#]} &, Range[1, 100, 0.5]];
+
+piM2I := piM2I = Interpolation[listPiM2];
+
+piM2InormFactor := piM2InormFactor = 1/ NIntegrate[piM2I[m2], {m2, 1, 100}];
+
+piM2Inorm[m2_] := piM2InormFactor piM2I[m2];
+
+
+(* 
+
+piM2Unnorm[m2_?NumberQ, opts:OptionsPattern[plpp]] := NIntegrate[
+  10^3 piM2M1[m2, m1, opts] pi[m1, opts], {m1, 1, 100}, (*Requires mMin > 1 and mMax < 100.*)
+  MinRecursion -> 3, 
+  PrecisionGoal -> 5, 
+  AccuracyGoal->Infinity, 
+  Method-> {Automatic, "SymbolicProcessing" -> 0}, 
+  MaxRecursion->20
+];
+
+piM2Norm[opts:OptionsPattern[plpp]] := piM2Norm[opts] =  1/NIntegrate[
+  piM2Unnorm[m2], {m2, 1, 100}, 
+  Method -> {Automatic, "SymbolicProcessing"->0}, 
+  MaxRecursion->12, 
+  PrecisionGoal->5
+];
+
+piM2[m2_, opts:OptionsPattern[plpp]] := piM2Unnorm[m2, opts] piM2Norm[opts];
+
+piM2I[m2_, opts:OptionsPattern[plpp]] := piM2I[m2, opts] = Interpolation[
+  {#, piM2[#, opts]} & /@ Range[1, 100, 0.025],
+  InterpolationOrder -> 1
+][m2]; *)
+
+dist2[opts:OptionsPattern[plpp]] := dist2[opts] = ProbabilityDistribution[piM2Inorm[m2], {m2, 1, 100}];
+\[ScriptCapitalD]2[opts:OptionsPattern[plpp]] := dist2[opts];
+
 
 Remove[lV, aV, mMinV, mMaxV, dmV, muV, sV];
 
 End[];
+
+DistributeDefinitions["plpp`"];
 
 optionsPlpp = Options[plpp`plpp];
 Echo["","Use plpp`pi[m, options] for the power-law-plus-peak PDF and plpp`\[ScriptCapitalD][options] for the distribution. Use optionsPlpp to see the options."];
