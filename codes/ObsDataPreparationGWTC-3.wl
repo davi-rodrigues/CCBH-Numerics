@@ -122,7 +122,7 @@ dataGWexport = datasetGWTrelev[All,
   ******************************************
 *)
 
-mzListPlot[x__] := ListPlot[x, 
+(* mzListPlot[x__] := ListPlot[x, 
   PlotRange->All, 
   Axes -> False, 
   Frame -> True, 
@@ -133,12 +133,12 @@ mzListPlot[x__] := ListPlot[x,
   GridLinesStyle->Dotted,
   FrameTicksStyle->Directive[FontFamily->"Times New Roman",FontSize->17, FontColor -> "Black"],
   Background -> White
-];
+]; *)
 
-plot1=datasetGWTrelev[All, {"redshift", "mass_1_source"}]//Values // mzListPlot;
+(* plot1=datasetGWTrelev[All, {"redshift", "mass_1_source"}]//Values // mzListPlot;
 plot2 = mzListPlot[datasetGWTrelev[All, {"redshift", "mass_2_source"}]//Values , 
   PlotMarkers->Graphics[{Blue, Opacity[0.6],Disk[]}, ImageSize -> 11, ImagePadding->1]
-];
+]; *)
 (* Show[plot1,plot2] *)
 
 
@@ -157,13 +157,13 @@ mXzDataForPlotting2= {Around[#1,{#2, #3}],Around[#4,{#5,#6}]}& @@@ mXzData2;
 (* mXzDataForPlotting = Join[mXzDataForPlotting1,mXzDataForPlotting2]; *)
 
 
-mXzDataForPlotting = mXzDataForPlotting1; (*Selects only m1 data.*)
+(* mXzDataForPlotting = mXzDataForPlotting1; (*Selects only m1 data.*)
 plotZxM = mzListPlot[
   mXzDataForPlotting, 
   (* FrameLabel-> {Style["z", FontFamily->"Times", 20, Italic], Style["M", FontFamily->"Times", 20, Italic]}, *) (*Labels will be generated in the tex file*)
   IntervalMarkersStyle -> {Opacity[0.3], Gray},
   PlotRange-> {{-0.01,1.0},{-1, 110}}
-];
+]; *)
 Echo[Length @ mXzDataForPlotting, "Number of m1 black holes: "];
 
 (* Print[plotZxM]; *)
