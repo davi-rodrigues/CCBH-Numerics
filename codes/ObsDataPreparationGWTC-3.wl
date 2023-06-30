@@ -157,8 +157,8 @@ mXzDataForPlotting2= {Around[#1,{#2, #3}],Around[#4,{#5,#6}]}& @@@ mXzData2;
 (* mXzDataForPlotting = Join[mXzDataForPlotting1,mXzDataForPlotting2]; *)
 
 
-(* mXzDataForPlotting = mXzDataForPlotting1; (*Selects only m1 data.*)
-plotZxM = mzListPlot[
+mXzDataForPlotting = mXzDataForPlotting1; (*Selects only m1 data.*)
+(*plotZxM = mzListPlot[
   mXzDataForPlotting, 
   (* FrameLabel-> {Style["z", FontFamily->"Times", 20, Italic], Style["M", FontFamily->"Times", 20, Italic]}, *) (*Labels will be generated in the tex file*)
   IntervalMarkersStyle -> {Opacity[0.3], Gray},
@@ -206,7 +206,5 @@ plotZxMbinned = mzListPlot[
   Joined -> True, 
   PlotStyle -> {Thickness[0.002], Red}
 ];
-
-plotZxMwithBinned = Show[plotZxM, plotZxMbinned]; (*Seems that this binned version will not be relevant*)
 
 
