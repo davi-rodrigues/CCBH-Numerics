@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   2456978,      41486]
-NotebookOptionsPosition[   2431895,      40973]
-NotebookOutlinePosition[   2450649,      41391]
-CellTagsIndexPosition[   2450606,      41388]
+NotebookDataLength[   2447578,      41306]
+NotebookOptionsPosition[   2423582,      40806]
+NotebookOutlinePosition[   2442337,      41224]
+CellTagsIndexPosition[   2442294,      41221]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -266,10 +266,12 @@ Cell[BoxData["\<\"Starting Constants.wl: \"\>"], "Print",
    3.8969375650509768`*^9, 3.896938304020726*^9, 3.89695670831406*^9, 
    3.8969759258840303`*^9, 3.896976743000147*^9, 3.8969773420546083`*^9, 
    3.8969785820966377`*^9, 3.896979027004067*^9, 3.897035656400423*^9, 
-   3.8970360770465517`*^9, 3.897036730601598*^9, 3.8971281960546007`*^9},
+   3.8970360770465517`*^9, 3.897036730601598*^9, 3.8971281960546007`*^9, 
+   3.897129485370269*^9, 3.897129600275276*^9, 3.897129638956397*^9, 
+   3.897277774389944*^9},
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"bddcc1e8-7a8d-4636-8fff-fc998343492e"],
+In[1]:=",ExpressionUUID->"7fb64364-0ce5-42ac-8f00-de20491a5ab3"],
 
 Cell[BoxData["\<\"Starting ObsDataPreparationGWTC-3.wl: \"\>"], "Print",
  CellChangeTimes->{
@@ -281,206 +283,20 @@ Cell[BoxData["\<\"Starting ObsDataPreparationGWTC-3.wl: \"\>"], "Print",
    3.8969375650509768`*^9, 3.896938304020726*^9, 3.89695670831406*^9, 
    3.8969759258840303`*^9, 3.896976743000147*^9, 3.8969773420546083`*^9, 
    3.8969785820966377`*^9, 3.896979027004067*^9, 3.897035656400423*^9, 
-   3.8970360770465517`*^9, 3.897036730601598*^9, 3.897128196058497*^9},
+   3.8970360770465517`*^9, 3.897036730601598*^9, 3.8971281960546007`*^9, 
+   3.897129485370269*^9, 3.897129600275276*^9, 3.897129638956397*^9, 
+   3.897277774399808*^9},
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"5e6ad956-aab9-4271-b0b1-656c3a2bc3d9"],
+In[1]:=",ExpressionUUID->"89b1f185-6cfb-4c48-a592-d192055a46da"],
 
 Cell[BoxData[
  RowBox[{
   TagBox["\<\"Number of m1 black holes: \"\>",
-   "EchoLabel"], "  ", "0"}]], "Echo",
+   "EchoLabel"], "  ", "72"}]], "Echo",
  CellChangeTimes->{
-  3.897128196763193*^9},ExpressionUUID->"5c11bcb3-9d02-49ba-88c6-\
-bc58bd1ceb95"]
-}, Open  ]],
-
-Cell[BoxData[
- TemplateBox[{
-  "Select", "normal", 
-   "\"Nonatomic expression expected at position \
-\\!\\(\\*RowBox[{\\\"1\\\"}]\\) in \\!\\(\\*RowBox[{\\\"Select\\\", \
-\\\"[\\\", RowBox[{\\\"mXzDataForPlotting\\\", \\\",\\\", \
-RowBox[{RowBox[{RowBox[{\\\"#1\\\", \\\"\[LeftDoubleBracket]\\\", \
-RowBox[{\\\"1\\\", \\\",\\\", \\\"1\\\"}], \\\"\[RightDoubleBracket]\\\"}], \
-\\\"<\\\", \\\"binWidth\\\"}], \\\"&\\\"}]}], \\\"]\\\"}]\\).\"", 2, 5, 1, 
-   22234563871289261237, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.897128196863958*^9},
- CellLabel->
-  "During evaluation of \
-In[1]:=",ExpressionUUID->"d9a77665-e85f-4faa-ac40-ded24ba4e907"],
-
-Cell[BoxData[
- TemplateBox[{
-  "Part", "partd", 
-   "\"Part specification \\!\\(\\*RowBox[{RowBox[{\\\"Select\\\", \\\"[\\\", \
-RowBox[{\\\"mXzDataForPlotting\\\", \\\",\\\", RowBox[{RowBox[{RowBox[{\\\"#1\
-\\\", \\\"\[LeftDoubleBracket]\\\", RowBox[{\\\"1\\\", \\\",\\\", \
-\\\"1\\\"}], \\\"\[RightDoubleBracket]\\\"}], \\\"<\\\", \\\"binWidth\\\"}], \
-\\\"&\\\"}]}], \\\"]\\\"}], \\\"\[LeftDoubleBracket]\\\", \
-RowBox[{\\\"All\\\", \\\",\\\", \\\"1\\\"}], \
-\\\"\[RightDoubleBracket]\\\"}]\\) is longer than depth of object.\"", 2, 5, 
-   2, 22234563871289261237, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.897128196940589*^9},
- CellLabel->
-  "During evaluation of \
-In[1]:=",ExpressionUUID->"d67ef3e0-2d08-48d8-b8da-1f8af5b13d94"],
-
-Cell[BoxData[
- TemplateBox[{
-  "Part", "partd", 
-   "\"Part specification \\!\\(\\*RowBox[{RowBox[{\\\"Select\\\", \\\"[\\\", \
-RowBox[{\\\"mXzDataForPlotting\\\", \\\",\\\", RowBox[{RowBox[{RowBox[{\\\"#1\
-\\\", \\\"\[LeftDoubleBracket]\\\", RowBox[{\\\"1\\\", \\\",\\\", \
-\\\"1\\\"}], \\\"\[RightDoubleBracket]\\\"}], \\\"<\\\", \\\"binWidth\\\"}], \
-\\\"&\\\"}]}], \\\"]\\\"}], \\\"\[LeftDoubleBracket]\\\", \
-RowBox[{\\\"All\\\", \\\",\\\", \\\"2\\\"}], \
-\\\"\[RightDoubleBracket]\\\"}]\\) is longer than depth of object.\"", 2, 5, 
-   3, 22234563871289261237, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.897128196959043*^9},
- CellLabel->
-  "During evaluation of \
-In[1]:=",ExpressionUUID->"a1d38565-f419-492a-aeaa-c7e3cf11816c"],
-
-Cell[BoxData[
- TemplateBox[{
-  "Select", "normal", 
-   "\"Nonatomic expression expected at position \
-\\!\\(\\*RowBox[{\\\"1\\\"}]\\) in \\!\\(\\*RowBox[{\\\"Select\\\", \
-\\\"[\\\", RowBox[{\\\"mXzDataForPlotting\\\", \\\",\\\", \
-RowBox[{RowBox[{RowBox[{\\\"binWidth\\\", \\\" \\\", RowBox[{\\\"(\\\", \
-RowBox[{\\\"2\\\", \\\"-\\\", \\\"1\\\"}], \\\")\\\"}]}], \\\"<\\\", RowBox[{\
-\\\"#1\\\", \\\"\[LeftDoubleBracket]\\\", RowBox[{\\\"1\\\", \\\",\\\", \\\"1\
-\\\"}], \\\"\[RightDoubleBracket]\\\"}], \\\"<\\\", RowBox[{\\\"binWidth\\\", \
-\\\" \\\", \\\"2\\\"}]}], \\\"&\\\"}]}], \\\"]\\\"}]\\).\"", 2, 5, 4, 
-   22234563871289261237, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.89712819697332*^9},
- CellLabel->
-  "During evaluation of \
-In[1]:=",ExpressionUUID->"eb5e9ecd-473c-4275-ac90-0b3cc8aac24c"],
-
-Cell[BoxData[
- TemplateBox[{
-  "Part", "partd", 
-   "\"Part specification \\!\\(\\*RowBox[{RowBox[{\\\"Select\\\", \\\"[\\\", \
-RowBox[{\\\"mXzDataForPlotting\\\", \\\",\\\", \
-RowBox[{RowBox[{RowBox[{\\\"binWidth\\\", \\\" \\\", RowBox[{\\\"(\\\", \
-RowBox[{\\\"2\\\", \\\"-\\\", \\\"1\\\"}], \\\")\\\"}]}], \\\"<\\\", RowBox[{\
-\\\"#1\\\", \\\"\[LeftDoubleBracket]\\\", RowBox[{\\\"1\\\", \\\",\\\", \\\"1\
-\\\"}], \\\"\[RightDoubleBracket]\\\"}], \\\"<\\\", RowBox[{\\\"binWidth\\\", \
-\\\" \\\", \\\"2\\\"}]}], \\\"&\\\"}]}], \\\"]\\\"}], \
-\\\"\[LeftDoubleBracket]\\\", RowBox[{\\\"All\\\", \\\",\\\", \\\"1\\\"}], \\\
-\"\[RightDoubleBracket]\\\"}]\\) is longer than depth of object.\"", 2, 5, 5, 
-   22234563871289261237, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.897128196985552*^9},
- CellLabel->
-  "During evaluation of \
-In[1]:=",ExpressionUUID->"1e9a68c6-ea78-499c-8364-6dafd97420e1"],
-
-Cell[BoxData[
- TemplateBox[{
-  "General", "stop", 
-   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Part\\\", \\\"::\\\", \
-\\\"partd\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
-calculation.\"", 2, 5, 6, 22234563871289261237, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.897128196997669*^9},
- CellLabel->
-  "During evaluation of \
-In[1]:=",ExpressionUUID->"1ed03915-396f-4efb-a0b2-cfe60812ad9a"],
-
-Cell[BoxData[
- TemplateBox[{
-  "Select", "normal", 
-   "\"Nonatomic expression expected at position \
-\\!\\(\\*RowBox[{\\\"1\\\"}]\\) in \\!\\(\\*RowBox[{\\\"Select\\\", \
-\\\"[\\\", RowBox[{\\\"mXzDataForPlotting\\\", \\\",\\\", \
-RowBox[{RowBox[{RowBox[{\\\"binWidth\\\", \\\" \\\", RowBox[{\\\"(\\\", \
-RowBox[{\\\"2\\\", \\\"-\\\", \\\"1\\\"}], \\\")\\\"}]}], \\\"<\\\", RowBox[{\
-\\\"#1\\\", \\\"\[LeftDoubleBracket]\\\", RowBox[{\\\"1\\\", \\\",\\\", \\\"1\
-\\\"}], \\\"\[RightDoubleBracket]\\\"}], \\\"<\\\", RowBox[{\\\"binWidth\\\", \
-\\\" \\\", \\\"2\\\"}]}], \\\"&\\\"}]}], \\\"]\\\"}]\\).\"", 2, 5, 7, 
-   22234563871289261237, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.897128197014435*^9},
- CellLabel->
-  "During evaluation of \
-In[1]:=",ExpressionUUID->"b7c1b606-bf17-49f7-85da-77e578357f24"],
-
-Cell[BoxData[
- TemplateBox[{
-  "General", "stop", 
-   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Select\\\", \\\"::\\\", \
-\\\"normal\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
-calculation.\"", 2, 5, 8, 22234563871289261237, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.897128197030243*^9},
- CellLabel->
-  "During evaluation of \
-In[1]:=",ExpressionUUID->"97dd53a2-d750-4973-924d-6a353c1a411b"],
-
-Cell[BoxData[
- TemplateBox[{
-  "Show", "gcomb", 
-   "\"Could not combine the graphics objects in \
-\\!\\(\\*RowBox[{\\\"Show\\\", \\\"[\\\", RowBox[{\\\"plotZxM\\\", \\\",\\\", \
-RowBox[{\\\"mzListPlot\\\", \\\"[\\\", RowBox[{RowBox[{\\\"{\\\", \
-RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{RowBox[{\\\"Select\\\", \\\"[\\\", \
-RowBox[{\\\"mXzDataForPlotting\\\", \\\",\\\", RowBox[{RowBox[{\\\"Less\\\", \
-\\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\"]\\\"}], \\\"&\\\"}]}], \\\"]\\\"}], \\\"\[LeftDoubleBracket]\\\", \
-RowBox[{\\\"All\\\", \\\",\\\", \\\"1\\\"}], \\\"\[RightDoubleBracket]\\\"}], \
-\\\",\\\", RowBox[{\\\"Mean\\\", \\\"[\\\", RowBox[{RowBox[{\\\"Select\\\", \
-\\\"[\\\", RowBox[{\\\"mXzDataForPlotting\\\", \\\",\\\", \
-RowBox[{RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\"&\\\"}]}], \\\"]\\\"}], \\\"\
-\[LeftDoubleBracket]\\\", RowBox[{\\\"All\\\", \\\",\\\", \\\"2\\\"}], \\\"\
-\[RightDoubleBracket]\\\"}], \\\"]\\\"}]}], \\\"}\\\"}], \\\",\\\", \
-RowBox[{\\\"{\\\", RowBox[{RowBox[{RowBox[{\\\"Select\\\", \\\"[\\\", \
-RowBox[{\\\"mXzDataForPlotting\\\", \\\",\\\", RowBox[{RowBox[{\\\"Less\\\", \
-\\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\"]\\\"}], \\\"&\\\"}]}], \\\"]\\\"}], \\\"\[LeftDoubleBracket]\\\", \
-RowBox[{\\\"All\\\", \\\",\\\", \\\"1\\\"}], \\\"\[RightDoubleBracket]\\\"}], \
-\\\",\\\", RowBox[{\\\"Mean\\\", \\\"[\\\", RowBox[{RowBox[{\\\"Select\\\", \
-\\\"[\\\", RowBox[{\\\"mXzDataForPlotting\\\", \\\",\\\", \
-RowBox[{RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\"&\\\"}]}], \\\"]\\\"}], \\\"\
-\[LeftDoubleBracket]\\\", RowBox[{\\\"All\\\", \\\",\\\", \\\"2\\\"}], \\\"\
-\[RightDoubleBracket]\\\"}], \\\"]\\\"}]}], \\\"}\\\"}], \\\",\\\", \
-RowBox[{\\\"\[LeftSkeleton]\\\", \\\"4\\\", \\\"\[RightSkeleton]\\\"}], \\\",\
-\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{RowBox[{\\\"Select\\\", \\\"[\\\", \
-RowBox[{\\\"mXzDataForPlotting\\\", \\\",\\\", RowBox[{RowBox[{\\\"Less\\\", \
-\\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\"]\\\"}], \\\"&\\\"}]}], \\\"]\\\"}], \\\"\[LeftDoubleBracket]\\\", \
-RowBox[{\\\"All\\\", \\\",\\\", \\\"1\\\"}], \\\"\[RightDoubleBracket]\\\"}], \
-\\\",\\\", RowBox[{\\\"Mean\\\", \\\"[\\\", RowBox[{RowBox[{\\\"Select\\\", \
-\\\"[\\\", RowBox[{\\\"mXzDataForPlotting\\\", \\\",\\\", \
-RowBox[{RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\"&\\\"}]}], \\\"]\\\"}], \\\"\
-\[LeftDoubleBracket]\\\", RowBox[{\\\"All\\\", \\\",\\\", \\\"2\\\"}], \\\"\
-\[RightDoubleBracket]\\\"}], \\\"]\\\"}]}], \\\"}\\\"}]}], \\\"}\\\"}], \\\",\
-\\\", RowBox[{\\\"PlotMarkers\\\", \\\"\[Rule]\\\", \
-GraphicsBox[List[RGBColor[1, 0, 0], Opacity[0.6`], Thickness[0.15`], \
-CircleBox[List[0, 0]]], Rule[ImageSize, 17], Rule[ImagePadding, 2]]}], \
-\\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\
-\"}], \\\",\\\", RowBox[{\\\"Joined\\\", \\\"\[Rule]\\\", \\\"True\\\"}], \
-\\\",\\\", RowBox[{\\\"PlotStyle\\\", \\\"\[Rule]\\\", RowBox[{\\\"{\\\", \
-RowBox[{RowBox[{\\\"Thickness\\\", \\\"[\\\", \\\"0.002`\\\", \\\"]\\\"}], \\\
-\",\\\", TemplateBox[Association[Rule[\\\"color\\\", RGBColor[1, 0, 0]]], \
-\\\"RGBColorSwatchTemplate\\\"]}], \\\"}\\\"}]}]}], \\\"]\\\"}]}], \
-\\\"]\\\"}]\\).\"", 2, 5, 9, 22234563871289261237, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.897128197095936*^9},
- CellLabel->
-  "During evaluation of \
-In[1]:=",ExpressionUUID->"f76aa580-fcac-4dd6-becd-1127197a6d51"],
-
-Cell[CellGroupData[{
+  3.897277775217308*^9},ExpressionUUID->"33ac1d79-60f3-45f4-a2ef-\
+6bac9fc6b491"],
 
 Cell[BoxData["\<\"Starting PowerLawPlusPeakDefinition.wl: \"\>"], "Print",
  CellChangeTimes->{
@@ -492,10 +308,12 @@ Cell[BoxData["\<\"Starting PowerLawPlusPeakDefinition.wl: \"\>"], "Print",
    3.8969375650509768`*^9, 3.896938304020726*^9, 3.89695670831406*^9, 
    3.8969759258840303`*^9, 3.896976743000147*^9, 3.8969773420546083`*^9, 
    3.8969785820966377`*^9, 3.896979027004067*^9, 3.897035656400423*^9, 
-   3.8970360770465517`*^9, 3.897036730601598*^9, 3.897128197129344*^9},
+   3.8970360770465517`*^9, 3.897036730601598*^9, 3.8971281960546007`*^9, 
+   3.897129485370269*^9, 3.897129600275276*^9, 3.897129638956397*^9, 
+   3.897277775262836*^9},
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"3bf0b203-107c-44ea-8ecc-9eb218c2c3cb"],
+In[1]:=",ExpressionUUID->"4c9a1877-9140-40df-8ab4-6821d4c7aa43"],
 
 Cell[BoxData[
  RowBox[{
@@ -504,8 +322,8 @@ plpp`\[ScriptCapitalD][options] for the distribution. Use optionsPlpp to see \
 the options.\"\>",
    "EchoLabel"], "  ", "\<\"\"\>"}]], "Echo",
  CellChangeTimes->{
-  3.8971281988445883`*^9},ExpressionUUID->"b45f3d52-c0dc-42e1-b6e0-\
-3b3ccd85d043"],
+  3.897277776993217*^9},ExpressionUUID->"907a437b-57ea-42fd-a0b4-\
+6e1c2701e786"],
 
 Cell[BoxData["\<\"Starting Cosmology.wl: \"\>"], "Print",
  CellChangeTimes->{
@@ -517,15 +335,17 @@ Cell[BoxData["\<\"Starting Cosmology.wl: \"\>"], "Print",
    3.8969375650509768`*^9, 3.896938304020726*^9, 3.89695670831406*^9, 
    3.8969759258840303`*^9, 3.896976743000147*^9, 3.8969773420546083`*^9, 
    3.8969785820966377`*^9, 3.896979027004067*^9, 3.897035656400423*^9, 
-   3.8970360770465517`*^9, 3.897036730601598*^9, 3.897128198862694*^9},
+   3.8970360770465517`*^9, 3.897036730601598*^9, 3.8971281960546007`*^9, 
+   3.897129485370269*^9, 3.897129600275276*^9, 3.897129638956397*^9, 
+   3.8972777770476227`*^9},
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"e3a843ac-dff2-4017-8da7-d77367940ac3"],
+In[1]:=",ExpressionUUID->"4636a5e7-ccfa-4423-a0a3-d78d26406f45"],
 
 Cell[BoxData["\<\"tableZformation loaded.\"\>"], "Echo",
  CellChangeTimes->{
-  3.897128199388248*^9},ExpressionUUID->"e586a198-99f0-432d-88ba-\
-0734c25ea081"],
+  3.8972777774765368`*^9},ExpressionUUID->"c78ac753-b1b3-441e-8346-\
+4a31f2c5ffbc"],
 
 Cell[BoxData["\<\"Starting MassFactorCorrection.wl: \"\>"], "Print",
  CellChangeTimes->{
@@ -537,10 +357,12 @@ Cell[BoxData["\<\"Starting MassFactorCorrection.wl: \"\>"], "Print",
    3.8969375650509768`*^9, 3.896938304020726*^9, 3.89695670831406*^9, 
    3.8969759258840303`*^9, 3.896976743000147*^9, 3.8969773420546083`*^9, 
    3.8969785820966377`*^9, 3.896979027004067*^9, 3.897035656400423*^9, 
-   3.8970360770465517`*^9, 3.897036730601598*^9, 3.897128201509725*^9},
+   3.8970360770465517`*^9, 3.897036730601598*^9, 3.8971281960546007`*^9, 
+   3.897129485370269*^9, 3.897129600275276*^9, 3.897129638956397*^9, 
+   3.897277779676435*^9},
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"7d799fee-c9ed-4b7a-9874-1e01c499a90e"],
+In[1]:=",ExpressionUUID->"ceb3e819-740c-411f-8667-c24cd46e3d81"],
 
 Cell[BoxData[
  RowBox[{
@@ -548,16 +370,16 @@ Cell[BoxData[
 \"\>",
    "EchoLabel"], "  ", "10000000"}]], "Echo",
  CellChangeTimes->{
-  3.8971282015178432`*^9},ExpressionUUID->"6cf407a6-9803-40e8-a9aa-\
-f18cebaf5a63"],
+  3.897277779692471*^9},ExpressionUUID->"c310c2cd-c158-476e-a56f-\
+68a1de134143"],
 
 Cell[BoxData[
  RowBox[{
   TagBox["\<\"dataM1Merger\"\>",
-   "EchoLabel"], "  ", "57.221024`"}]], "EchoTiming",
+   "EchoLabel"], "  ", "57.819247`"}]], "EchoTiming",
  CellChangeTimes->{
-  3.8971282588329763`*^9},ExpressionUUID->"e2e52afa-15cb-40e4-8574-\
-dedef8299076"],
+  3.897277837608979*^9},ExpressionUUID->"32e8f85f-7d39-4c25-8927-\
+ddba9351b3c9"],
 
 Cell[BoxData["\<\"End of running wl files.\"\>"], "Print",
  CellChangeTimes->{
@@ -569,106 +391,24 @@ Cell[BoxData["\<\"End of running wl files.\"\>"], "Print",
    3.8969375650509768`*^9, 3.896938304020726*^9, 3.89695670831406*^9, 
    3.8969759258840303`*^9, 3.896976743000147*^9, 3.8969773420546083`*^9, 
    3.8969785820966377`*^9, 3.896979027004067*^9, 3.897035656400423*^9, 
-   3.8970360770465517`*^9, 3.897036730601598*^9, 3.897128258850029*^9},
+   3.8970360770465517`*^9, 3.897036730601598*^9, 3.8971281960546007`*^9, 
+   3.897129485370269*^9, 3.897129600275276*^9, 3.897129638956397*^9, 
+   3.8972778376438293`*^9},
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"60100892-1c40-48d6-8d8a-6d13f8f512a9"]
+In[1]:=",ExpressionUUID->"ea16cc6a-311f-4590-a4b8-ac8776273995"]
 }, Open  ]]
 }, Open  ]],
-
-Cell[BoxData[
- RowBox[{"test", " ", "=", " ", 
-  RowBox[{"getAux", "[", "\"\<plpplistPiM2.mx\>\"", "]"}]}]], "Code",
- CellChangeTimes->{{3.8971284954103947`*^9, 3.897128530893239*^9}, {
-  3.897128660365313*^9, 3.8971286996121187`*^9}},
- CellLabel->"In[22]:=",ExpressionUUID->"b620e25a-564e-451f-b3da-982fd47cd571"],
-
-Cell[BoxData["test"], "Code",
- CellChangeTimes->{{3.8971287015102997`*^9, 3.897128701776566*^9}},
- CellLabel->"In[23]:=",ExpressionUUID->"5e0d941a-ddd4-4056-8f19-66e864d664ff"],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"Names", "[", "\"\<Global`*\>\"", "]"}]], "Code",
- CellChangeTimes->{{3.897128874758378*^9, 3.8971288826080923`*^9}},
- CellLabel->"In[20]:=",ExpressionUUID->"c1bf9500-2a7b-45da-9f5f-1487bf5a0431"],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{"\<\"baseSimPoints\"\>", ",", "\<\"bhnsEvents\"\>", 
-   ",", "\<\"bhnsEventsSelec\"\>", ",", "\<\"bin\"\>", ",", "\<\"bin1\"\>", 
-   ",", "\<\"binnedDataWerrors\"\>", ",", "\<\"binWidth\"\>", 
-   ",", "\<\"bnsEvents\"\>", ",", "\<\"dataDelayTime\"\>", 
-   ",", "\<\"dataGWexport\"\>", ",", "\<\"dataM1Formation\"\>", 
-   ",", "\<\"dataM1FormationRaw\"\>", ",", "\<\"dataM1Merger\"\>", 
-   ",", "\<\"dataM1MergerSameLength\"\>", ",", "\<\"dataMassFactor\"\>", 
-   ",", "\<\"datasetGWpop\"\>", ",", "\<\"datasetGWpopExtended\"\>", 
-   ",", "\<\"datasetGWpopSelec\"\>", ",", "\<\"datasetGWTC\"\>", 
-   ",", "\<\"datasetGWTCnoV\"\>", ",", "\<\"datasetGWTrelev\"\>", 
-   ",", "\<\"delayTime\"\>", ",", "\<\"dumpsave\"\>", 
-   ",", "\<\"exportAux\"\>", ",", "\<\"exportOut\"\>", 
-   ",", "\<\"fileName\"\>", ",", "\<\"findSigma\"\>", ",", "\<\"getAux\"\>", 
-   ",", "\<\"getCode\"\>", ",", "\<\"gyr\"\>", ",", "\<\"H0Gy\"\>", 
-   ",", "\<\"hubble\"\>", ",", "\<\"i\"\>", 
-   ",", "\<\"isComputeTableZformation\"\>", ",", "\<\"k\"\>", 
-   ",", "\<\"k0\"\>", ",", "\<\"kpc\"\>", ",", "\<\"length\"\>", 
-   ",", "\<\"listBins\"\>", ",", "\<\"listDelayTime\"\>", 
-   ",", "\<\"listw\"\>", ",", "\<\"listzObs\"\>", ",", "\<\"massFactor\"\>", 
-   ",", "\<\"massFactorDelay\"\>", ",", "\<\"maxDelayTime\"\>", 
-   ",", "\<\"minDelayTime\"\>", ",", "\<\"mXzData1\"\>", 
-   ",", "\<\"mXzData2\"\>", ",", "\<\"mXzDataForPlotting\"\>", 
-   ",", "\<\"mXzDataForPlotting1\"\>", ",", "\<\"mXzDataForPlotting2\"\>", 
-   ",", "\<\"mzListPlot\"\>", ",", "\<\"n\"\>", ",", "\<\"optionsPlpp\"\>", 
-   ",", "\<\"optionstkw\"\>", ",", "\<\"opts\"\>", ",", "\<\"outSigma\"\>", 
-   ",", "\<\"pathAux\"\>", ",", "\<\"pathBase\"\>", ",", "\<\"pathCodes\"\>", 
-   ",", "\<\"pathIn\"\>", ",", "\<\"pathOut\"\>", ",", "\<\"plotZxM\"\>", 
-   ",", "\<\"plotZxMbinned\"\>", ",", "\<\"plotZxMwithBinned\"\>", 
-   ",", "\<\"pos\"\>", ",", "\<\"pos190426\"\>", ",", "\<\"pos200105\"\>", 
-   ",", "\<\"posBHNSlines\"\>", ",", "\<\"posBHNSselectLines\"\>", 
-   ",", "\<\"posBNSlines\"\>", ",", "\<\"posNeglected\"\>", 
-   ",", "\<\"prob\"\>", ",", "\<\"proportionalBaseSimPoints\"\>", 
-   ",", "\<\"randomLogDelayTime\"\>", ",", "\<\"realizations\"\>", 
-   ",", "\<\"sigma\"\>", ",", "\<\"tableZformation\"\>", 
-   ",", "\<\"tableZformationFlat\"\>", ",", "\<\"tdmax\"\>", 
-   ",", "\<\"tdmax0\"\>", ",", "\<\"tdmin\"\>", ",", "\<\"tdmin0\"\>", 
-   ",", "\<\"test\"\>", ",", "\<\"timeZ\"\>", ",", "\<\"variable\"\>", 
-   ",", "\<\"w\"\>", ",", "\<\"w0\"\>", ",", "\<\"w1\"\>", ",", "\<\"x\"\>", 
-   ",", "\<\"x$\"\>", ",", "\<\"z\"\>", ",", "\<\"z1\"\>", ",", "\<\"z2\"\>", 
-   ",", "\<\"zformation\"\>", ",", "\<\"zFormation\"\>", 
-   ",", "\<\"zFormationI\"\>", ",", "\<\"zFormationIfast\"\>", 
-   ",", "\<\"zFormationInoZmax\"\>", ",", "\<\"zFormationIraw\"\>", 
-   ",", "\<\"zMax\"\>", ",", "\<\"zMax0\"\>", ",", "\<\"zObs\"\>", 
-   ",", "\<\"\[ScriptCapitalD]plp\"\>", ",", "\<\"\[CapitalOmega]m\"\>"}], 
-  "}"}]], "Output",
- CellChangeTimes->{3.897128882950368*^9},
- CellLabel->"Out[20]=",ExpressionUUID->"54f06ac4-c4d8-4e96-87bc-2911da0a92f6"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData["plpp`listPiM2"], "Code",
- CellChangeTimes->{{3.8971286753461323`*^9, 3.897128682382773*^9}},
- CellLabel->"In[17]:=",ExpressionUUID->"10f63313-5794-4159-81d2-e3dd165b3bc8"],
-
-Cell[BoxData["$Aborted"], "Output",
- CellChangeTimes->{3.897128687311311*^9},
- CellLabel->"Out[17]=",ExpressionUUID->"277ce597-2d1e-4ebb-bd1a-726ce2296448"]
-}, Open  ]],
-
-Cell[BoxData[
- RowBox[{"plpp`listPiM2", "=."}]], "Code",
- CellChangeTimes->{{3.89712906642383*^9, 3.89712906669379*^9}},
- CellLabel->"In[26]:=",ExpressionUUID->"fc2f3221-0e7c-406c-a643-d5424f050b75"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[{
  RowBox[{
-  RowBox[{"Off", "[", 
-   RowBox[{"NIntegrate", "::", "slwcon"}], "]"}], ";"}], "\n", 
- RowBox[{
-  RowBox[{"plpp`listPiM2", ";"}], " ", 
+  RowBox[{
+   RowBox[{"Off", "[", 
+    RowBox[{"NIntegrate", "::", "slwcon"}], "]"}], ";"}], "\n", 
+  RowBox[{"(*", 
+   RowBox[{"plpp`listPiM2", ";"}], " ", "*)"}], 
   RowBox[{"(*", 
    RowBox[{
     RowBox[{"Takes", " ", "about", " ", "15", " ", 
@@ -689,8 +429,9 @@ Cell[BoxData[{
    3.897032888160119*^9}, {3.897035619991057*^9, 3.897035621806322*^9}, {
    3.897036760733377*^9, 3.8970367613986893`*^9}, {3.897037496812141*^9, 
    3.8970375637113123`*^9}, {3.897128650836914*^9, 3.897128657995509*^9}, {
-   3.8971290001360703`*^9, 3.897129018725565*^9}, 3.897129094196127*^9},
- CellLabel->"In[32]:=",ExpressionUUID->"07981432-12d5-4c52-9319-afa4f17d5b8e"],
+   3.8971290001360703`*^9, 3.897129018725565*^9}, 3.897129094196127*^9, 
+   3.897130421679843*^9},
+ CellLabel->"In[19]:=",ExpressionUUID->"07981432-12d5-4c52-9319-afa4f17d5b8e"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -1094,8 +835,9 @@ Cell[BoxData[
    RowBox[{"{", 
     RowBox[{"100.`", ",", "0.`"}], "}"}]}], "}"}]], "Output",
  CellChangeTimes->{
-  3.897037367223892*^9, {3.897129083576009*^9, 3.897129095846818*^9}},
- CellLabel->"Out[35]=",ExpressionUUID->"b06ba113-cc89-4407-be7d-a32101a4fac8"]
+  3.897037367223892*^9, {3.897129083576009*^9, 3.897129095846818*^9}, {
+   3.8971304182096453`*^9, 3.897130423800716*^9}},
+ CellLabel->"Out[21]=",ExpressionUUID->"cb6982fa-7ec0-4b6b-a305-7c10113d6516"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1116,7 +858,7 @@ Cell[BoxData[
      RowBox[{"PlotRange", "->", "All"}], ",", " ", 
      RowBox[{"PlotStyle", "->", "Red"}]}], "]"}]}], "]"}]], "Code",
  CellChangeTimes->{{3.896980362392664*^9, 3.8969803974538937`*^9}},
- CellLabel->"In[15]:=",ExpressionUUID->"df74f3be-4f72-4796-ae7b-51acf8847dfb"],
+ CellLabel->"In[22]:=",ExpressionUUID->"df74f3be-4f72-4796-ae7b-51acf8847dfb"],
 
 Cell[BoxData[
  GraphicsBox[{{{{}, {}, 
@@ -1340,7 +1082,7 @@ W84/s98j+GZN0xd9+oLg3w91/L71O4Lfofnau/IXgm/0d8oCm78I/u0Ldl//
 /0fwAVb8nuQ=
         "]]},
       Annotation[#, 
-       "Charting`Private`Tag$983267#1"]& ], {}}, {}}, {{}, {{}, {}, 
+       "Charting`Private`Tag$11239#1"]& ], {}}, {}}, {{}, {{}, {}, 
      {RGBColor[1, 0, 0], PointSize[0.009166666666666668], AbsoluteThickness[
       1.6], LineBox[CompressedData["
 1:eJxd1XlQ0wcaxvFwKaCAoEWqcoNcQeVGhPCEI0C4IWC0HrGCAkVQqJx2DYrU
@@ -1424,8 +1166,8 @@ P8OsNf/3fwEYUOm7
      Scaled[0.05]}},
   Ticks->{Automatic, Automatic}]], "Output",
  CellChangeTimes->{3.896980365695406*^9, 3.896980398391533*^9, 
-  3.897037583649719*^9},
- CellLabel->"Out[15]=",ExpressionUUID->"683dc78e-cc32-4eb4-aca6-f90096b36687"]
+  3.897037583649719*^9, 3.89712938687737*^9, 3.897130431114551*^9},
+ CellLabel->"Out[22]=",ExpressionUUID->"8a339f56-cea1-4493-bbe6-54a6bd0838c9"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -2185,20 +1927,598 @@ Cell[BoxData[{
   "\n"}], "\n", 
  RowBox[{
   RowBox[{
-   RowBox[{
-    RowBox[{"\[ScriptCapitalD]M2FormationEmp", "[", 
-     RowBox[{"zObs_", ",", " ", 
-      RowBox[{"opts", ":", 
-       RowBox[{"OptionsPattern", "[", "optionstkw", "]"}]}]}], "]"}], " ", ":=",
-     " ", 
-    RowBox[{"\[ScriptCapitalD]M2FormationEmpRaw", "[", "\n", "  ", 
-     RowBox[{"zObs", ",", " ", "\n", "  ", 
-      RowBox[{"OptionValue", " ", "@", " ", "tdmin"}], ",", " ", "\n", "  ", 
-      RowBox[{"OptionValue", " ", "@", " ", "tdmax"}], ",", " ", "\n", "  ", 
-      RowBox[{"OptionValue", " ", "@", " ", "k"}], ",", " ", "\n", "  ", 
-      RowBox[{"OptionValue", " ", "@", " ", "zMax"}], ",", " ", "\n", "  ", 
-      RowBox[{"OptionValue", " ", "@", " ", "w"}]}], "\n", "]"}]}], ";"}], 
-  "\n"}], "\n", 
+   RowBox[{"\[ScriptCapitalD]M2FormationEmp", "[", 
+    RowBox[{"zObs_", ",", " ", 
+     RowBox[{"opts", ":", 
+      RowBox[{"OptionsPattern", "[", "optionstkw", "]"}]}]}], "]"}], " ", ":=",
+    " ", 
+   RowBox[{"\[ScriptCapitalD]M2FormationEmpRaw", "[", "\n", "  ", 
+    RowBox[{"zObs", ",", " ", "\n", "  ", 
+     RowBox[{"OptionValue", " ", "@", " ", "tdmin"}], ",", " ", "\n", "  ", 
+     RowBox[{"OptionValue", " ", "@", " ", "tdmax"}], ",", " ", "\n", "  ", 
+     RowBox[{"OptionValue", " ", "@", " ", "k"}], ",", " ", "\n", "  ", 
+     RowBox[{"OptionValue", " ", "@", " ", "zMax"}], ",", " ", "\n", "  ", 
+     RowBox[{"OptionValue", " ", "@", " ", "w"}]}], "\n", "]"}]}], 
+  ";"}]}], "Code",
+ CellChangeTimes->{{3.893587918081071*^9, 3.893587981798483*^9}, 
+   3.893588021322073*^9, {3.893588077680015*^9, 3.893588088447797*^9}, {
+   3.893588139075603*^9, 3.893588169322654*^9}, {3.893588381499082*^9, 
+   3.893588402607884*^9}, {3.893588572570808*^9, 3.893588580665833*^9}, {
+   3.893588886826621*^9, 3.8935888877856607`*^9}, {3.893589005536421*^9, 
+   3.893589183336935*^9}, {3.893589273176745*^9, 3.893589273274304*^9}, {
+   3.8935908321346083`*^9, 3.893590907972971*^9}, {3.8935911621105556`*^9, 
+   3.893591233021615*^9}, {3.8935912857827463`*^9, 3.893591287672081*^9}, {
+   3.893591330336143*^9, 3.893591345453277*^9}, {3.893591450530385*^9, 
+   3.893591505149522*^9}, {3.893593578157731*^9, 3.893593598350236*^9}, {
+   3.893593647948765*^9, 3.893593698319098*^9}, {3.894802732174343*^9, 
+   3.894802762290668*^9}, 3.894802811323555*^9, {3.894802845999406*^9, 
+   3.894802881227058*^9}, {3.894802929316658*^9, 3.894802959486219*^9}, {
+   3.894870322012478*^9, 3.8948704331380377`*^9}, 3.894870471000546*^9, {
+   3.894871187031177*^9, 3.8948712339423018`*^9}, {3.894871280158622*^9, 
+   3.8948712804140043`*^9}, {3.894871632396681*^9, 3.894871665770377*^9}, {
+   3.894871730835753*^9, 3.894871821250638*^9}, {3.894872014623081*^9, 
+   3.894872143080118*^9}, {3.894873158923193*^9, 3.8948732676491547`*^9}, {
+   3.894873989229479*^9, 3.8948739899484787`*^9}, {3.8949709355318327`*^9, 
+   3.894970965698843*^9}, {3.8949711351580753`*^9, 3.894971147139914*^9}, {
+   3.89497126571871*^9, 3.894971270764509*^9}, {3.894971332391529*^9, 
+   3.894971332458514*^9}, {3.894971382041622*^9, 3.894971382365081*^9}, {
+   3.8949714194502697`*^9, 3.894971419779436*^9}, 3.894971605963797*^9, {
+   3.8949724750130157`*^9, 3.894972475090529*^9}, {3.89497267037245*^9, 
+   3.89497267199791*^9}, {3.89497277292875*^9, 3.8949728134313993`*^9}, {
+   3.894972851769195*^9, 3.894972860921289*^9}, {3.89497318566614*^9, 
+   3.894973193662425*^9}, {3.8949774864924297`*^9, 3.894977499954235*^9}, {
+   3.894977545497921*^9, 3.894977545610696*^9}, {3.894977739022297*^9, 
+   3.894977740283434*^9}, {3.8949779827970333`*^9, 3.8949779828651342`*^9}, {
+   3.8949966321283283`*^9, 3.894996665093739*^9}, {3.894996707831101*^9, 
+   3.894996708853422*^9}, {3.896179634553652*^9, 3.896179636914406*^9}, 
+   3.896179818204728*^9, {3.896182286702859*^9, 3.896182286770524*^9}, {
+   3.896182910585758*^9, 3.896182910778242*^9}, {3.896183424867095*^9, 
+   3.896183424897963*^9}, {3.896183460194921*^9, 3.896183460781604*^9}, 
+   3.896188689650387*^9, {3.896188762014126*^9, 3.89618876208928*^9}, {
+   3.896188848383637*^9, 3.8961888485011663`*^9}, 3.8961952071534853`*^9, {
+   3.896195327583055*^9, 3.896195327669586*^9}, {3.896370816680647*^9, 
+   3.896370829493161*^9}, {3.896370904042678*^9, 3.8963709069043217`*^9}, {
+   3.896371915516514*^9, 3.896371915913479*^9}, {3.896371972779915*^9, 
+   3.8963720624319277`*^9}, {3.896936795419002*^9, 3.8969368758098307`*^9}, {
+   3.897034902328765*^9, 3.897034918994795*^9}, {3.897034952086927*^9, 
+   3.8970349525316477`*^9}, 3.897129441123643*^9},
+ CellLabel->"In[23]:=",ExpressionUUID->"afe5a2a6-c413-49ab-9d52-d446ff0bf8d4"],
+
+Cell[BoxData[
+ RowBox[{
+  TagBox["\<\"dataM2Merger\"\>",
+   "EchoLabel"], "  ", "160.002912`"}]], "EchoTiming",
+ CellChangeTimes->{
+  3.897130597249498*^9},ExpressionUUID->"f9714f18-5550-4d04-9421-\
+80809c6da1f1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Histogram", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"dataM1Merger", ",", " ", "dataM2Merger"}], "}"}], ",", " ", 
+   RowBox[{"{", "1", "}"}], ",", " ", "\"\<PDF\>\"", ",", " ", 
+   RowBox[{"PlotRange", "->", "All"}]}], "]"}]], "Code",
+ CellLabel->"In[36]:=",ExpressionUUID->"3e2fa93b-abc7-4f34-8848-9e94230a7dec"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   {RGBColor[0.987148, 0.8073604000000001, 0.49470040000000004`], EdgeForm[{
+    Opacity[0.147], Thickness[Small]}], {{}, 
+     {RGBColor[0.97858, 0.678934, 0.157834], Opacity[0.5], EdgeForm[{Opacity[
+      0.147], Thickness[Small]}], 
+      RectangleBox[{7., 0.}, 
+       NCache[{8., Rational[2784643, 20000000]}, {8., 0.13923215}],
+       RoundingRadius->0], 
+      RectangleBox[{8., 0.}, 
+       NCache[{9., Rational[3571079, 20000000]}, {9., 0.17855395}],
+       RoundingRadius->0], 
+      RectangleBox[{9., 0.}, 
+       NCache[{10., Rational[729283, 5000000]}, {10., 0.1458566}],
+       RoundingRadius->0], 
+      RectangleBox[{10., 0.}, 
+       NCache[{11., Rational[2065359, 20000000]}, {11., 0.10326795}],
+       RoundingRadius->0], 
+      RectangleBox[{11., 0.}, 
+       NCache[{12., Rational[149433, 2000000]}, {12., 0.0747165}],
+       RoundingRadius->0], 
+      RectangleBox[{12., 0.}, 
+       NCache[{13., Rational[1113299, 20000000]}, {13., 0.05566495}],
+       RoundingRadius->0], 
+      RectangleBox[{13., 0.}, 
+       NCache[{14., Rational[843223, 20000000]}, {14., 0.04216115}],
+       RoundingRadius->0], 
+      RectangleBox[{14., 0.}, 
+       NCache[{15., Rational[328291, 10000000]}, {15., 0.0328291}],
+       RoundingRadius->0], 
+      RectangleBox[{15., 0.}, 
+       NCache[{16., Rational[129089, 5000000]}, {16., 0.0258178}],
+       RoundingRadius->0], 
+      RectangleBox[{16., 0.}, 
+       NCache[{17., Rational[103249, 5000000]}, {17., 0.0206498}],
+       RoundingRadius->0], 
+      RectangleBox[{17., 0.}, 
+       NCache[{18., Rational[335401, 20000000]}, {18., 0.01677005}],
+       RoundingRadius->0], 
+      RectangleBox[{18., 0.}, 
+       NCache[{19., Rational[275653, 20000000]}, {19., 0.01378265}],
+       RoundingRadius->0], 
+      RectangleBox[{19., 0.}, 
+       NCache[{20., Rational[28513, 2500000]}, {20., 0.0114052}],
+       RoundingRadius->0], 
+      RectangleBox[{20., 0.}, 
+       NCache[{21., Rational[23837, 2500000]}, {21., 0.0095348}],
+       RoundingRadius->0], 
+      RectangleBox[{21., 0.}, 
+       NCache[{22., Rational[162263, 20000000]}, {22., 0.00811315}],
+       RoundingRadius->0], 
+      RectangleBox[{22., 0.}, 
+       NCache[{23., Rational[27387, 4000000]}, {23., 0.00684675}],
+       RoundingRadius->0], 
+      RectangleBox[{23., 0.}, 
+       NCache[{24., Rational[14713, 2500000]}, {24., 0.0058852}],
+       RoundingRadius->0], 
+      RectangleBox[{24., 0.}, 
+       NCache[{25., Rational[10181, 2000000]}, {25., 0.0050905}],
+       RoundingRadius->0], 
+      RectangleBox[{25., 0.}, 
+       NCache[{26., Rational[44057, 10000000]}, {26., 0.0044057}],
+       RoundingRadius->0], 
+      RectangleBox[{26., 0.}, 
+       NCache[{27., Rational[75977, 20000000]}, {27., 0.00379885}],
+       RoundingRadius->0], 
+      RectangleBox[{27., 0.}, 
+       NCache[{28., Rational[16903, 5000000]}, {28., 0.0033806}],
+       RoundingRadius->0], 
+      RectangleBox[{28., 0.}, 
+       NCache[{29., Rational[61433, 20000000]}, {29., 0.00307165}],
+       RoundingRadius->0], 
+      RectangleBox[{29., 0.}, 
+       NCache[{30., Rational[3029, 1000000]}, {30., 0.003029}],
+       RoundingRadius->0], 
+      RectangleBox[{30., 0.}, 
+       NCache[{31., Rational[74551, 20000000]}, {31., 0.00372755}],
+       RoundingRadius->0], 
+      RectangleBox[{31., 0.}, 
+       NCache[{32., Rational[115737, 20000000]}, {32., 0.00578685}],
+       RoundingRadius->0], 
+      RectangleBox[{32., 0.}, 
+       NCache[{33., Rational[183991, 20000000]}, {33., 0.00919955}],
+       RoundingRadius->0], 
+      RectangleBox[{33., 0.}, 
+       NCache[{34., Rational[254417, 20000000]}, {34., 0.01272085}],
+       RoundingRadius->0], 
+      RectangleBox[{34., 0.}, 
+       NCache[{35., Rational[281491, 20000000]}, {35., 0.01407455}],
+       RoundingRadius->0], 
+      RectangleBox[{35., 0.}, 
+       NCache[{36., Rational[12207, 1000000]}, {36., 0.012207}],
+       RoundingRadius->0], 
+      RectangleBox[{36., 0.}, 
+       NCache[{37., Rational[166399, 20000000]}, {37., 0.00831995}],
+       RoundingRadius->0], 
+      RectangleBox[{37., 0.}, 
+       NCache[{38., Rational[22913, 5000000]}, {38., 0.0045826}],
+       RoundingRadius->0], 
+      RectangleBox[{38., 0.}, 
+       NCache[{39., Rational[11597, 5000000]}, {39., 0.0023194}],
+       RoundingRadius->0], 
+      RectangleBox[{39., 0.}, 
+       NCache[{40., Rational[26019, 20000000]}, {40., 0.00130095}],
+       RoundingRadius->0], 
+      RectangleBox[{40., 0.}, 
+       NCache[{41., Rational[1171, 1250000]}, {41., 0.0009368}],
+       RoundingRadius->0], 
+      RectangleBox[{41., 0.}, 
+       NCache[{42., Rational[16059, 20000000]}, {42., 0.00080295}],
+       RoundingRadius->0], 
+      RectangleBox[{42., 0.}, 
+       NCache[{43., Rational[2887, 4000000]}, {43., 0.00072175}],
+       RoundingRadius->0], 
+      RectangleBox[{43., 0.}, 
+       NCache[{44., Rational[6671, 10000000]}, {44., 0.0006671}],
+       RoundingRadius->0], 
+      RectangleBox[{44., 0.}, 
+       NCache[{45., Rational[757, 1250000]}, {45., 0.0006056}],
+       RoundingRadius->0], 
+      RectangleBox[{45., 0.}, 
+       NCache[{46., Rational[11261, 20000000]}, {46., 0.00056305}],
+       RoundingRadius->0], 
+      RectangleBox[{46., 0.}, 
+       NCache[{47., Rational[10483, 20000000]}, {47., 0.00052415}],
+       RoundingRadius->0], 
+      RectangleBox[{47., 0.}, 
+       NCache[{48., Rational[9757, 20000000]}, {48., 0.00048785}],
+       RoundingRadius->0], 
+      RectangleBox[{48., 0.}, 
+       NCache[{49., Rational[4471, 10000000]}, {49., 0.0004471}],
+       RoundingRadius->0], 
+      RectangleBox[{49., 0.}, 
+       NCache[{50., Rational[2111, 5000000]}, {50., 0.0004222}],
+       RoundingRadius->0], 
+      RectangleBox[{50., 0.}, 
+       NCache[{51., Rational[3899, 10000000]}, {51., 0.0003899}],
+       RoundingRadius->0], 
+      RectangleBox[{51., 0.}, 
+       NCache[{52., Rational[7147, 20000000]}, {52., 0.00035735}],
+       RoundingRadius->0], 
+      RectangleBox[{52., 0.}, 
+       NCache[{53., Rational[6797, 20000000]}, {53., 0.00033985}],
+       RoundingRadius->0], 
+      RectangleBox[{53., 0.}, 
+       NCache[{54., Rational[6301, 20000000]}, {54., 0.00031505}],
+       RoundingRadius->0], 
+      RectangleBox[{54., 0.}, 
+       NCache[{55., Rational[587, 2000000]}, {55., 0.0002935}],
+       RoundingRadius->0], 
+      RectangleBox[{55., 0.}, 
+       NCache[{56., Rational[5489, 20000000]}, {56., 0.00027445}],
+       RoundingRadius->0], 
+      RectangleBox[{56., 0.}, 
+       NCache[{57., Rational[2577, 10000000]}, {57., 0.0002577}],
+       RoundingRadius->0], 
+      RectangleBox[{57., 0.}, 
+       NCache[{58., Rational[491, 2000000]}, {58., 0.0002455}],
+       RoundingRadius->0], 
+      RectangleBox[{58., 0.}, 
+       NCache[{59., Rational[1167, 5000000]}, {59., 0.0002334}],
+       RoundingRadius->0], 
+      RectangleBox[{59., 0.}, 
+       NCache[{60., Rational[4387, 20000000]}, {60., 0.00021935}],
+       RoundingRadius->0], 
+      RectangleBox[{60., 0.}, 
+       NCache[{61., Rational[4053, 20000000]}, {61., 0.00020265}],
+       RoundingRadius->0], 
+      RectangleBox[{61., 0.}, 
+       NCache[{62., Rational[969, 5000000]}, {62., 0.0001938}],
+       RoundingRadius->0], 
+      RectangleBox[{62., 0.}, 
+       NCache[{63., Rational[3649, 20000000]}, {63., 0.00018245}],
+       RoundingRadius->0], 
+      RectangleBox[{63., 0.}, 
+       NCache[{64., Rational[859, 5000000]}, {64., 0.0001718}],
+       RoundingRadius->0], 
+      RectangleBox[{64., 0.}, 
+       NCache[{65., Rational[3277, 20000000]}, {65., 0.00016385}],
+       RoundingRadius->0], 
+      RectangleBox[{65., 0.}, 
+       NCache[{66., Rational[193, 1250000]}, {66., 0.0001544}],
+       RoundingRadius->0], 
+      RectangleBox[{66., 0.}, 
+       NCache[{67., Rational[571, 4000000]}, {67., 0.00014275}],
+       RoundingRadius->0], 
+      RectangleBox[{67., 0.}, 
+       NCache[{68., Rational[2673, 20000000]}, {68., 0.00013365}],
+       RoundingRadius->0], 
+      RectangleBox[{68., 0.}, 
+       NCache[{69., Rational[333, 2500000]}, {69., 0.0001332}],
+       RoundingRadius->0], 
+      RectangleBox[{69., 0.}, 
+       NCache[{70., Rational[2509, 20000000]}, {70., 0.00012545}],
+       RoundingRadius->0], 
+      RectangleBox[{70., 0.}, 
+       NCache[{71., Rational[2437, 20000000]}, {71., 0.00012185}],
+       RoundingRadius->0], 
+      RectangleBox[{71., 0.}, 
+       NCache[{72., Rational[1097, 10000000]}, {72., 0.0001097}],
+       RoundingRadius->0], 
+      RectangleBox[{72., 0.}, 
+       NCache[{73., Rational[2161, 20000000]}, {73., 0.00010805}],
+       RoundingRadius->0], 
+      RectangleBox[{73., 0.}, 
+       NCache[{74., Rational[2101, 20000000]}, {74., 0.00010505}],
+       RoundingRadius->0], 
+      RectangleBox[{74., 0.}, 
+       NCache[{75., Rational[1939, 20000000]}, {75., 0.00009695}],
+       RoundingRadius->0], 
+      RectangleBox[{75., 0.}, 
+       NCache[{76., Rational[1807, 20000000]}, {76., 0.00009035}],
+       RoundingRadius->0], 
+      RectangleBox[{76., 0.}, 
+       NCache[{77., Rational[223, 2500000]}, {77., 0.0000892}],
+       RoundingRadius->0], 
+      RectangleBox[{77., 0.}, 
+       NCache[{78., Rational[17, 200000]}, {78., 0.000085}],
+       RoundingRadius->0], 
+      RectangleBox[{78., 0.}, 
+       NCache[{79., Rational[1671, 20000000]}, {79., 0.00008355}],
+       RoundingRadius->0], 
+      RectangleBox[{79., 0.}, 
+       NCache[{80., Rational[149, 2000000]}, {80., 0.0000745}],
+       RoundingRadius->0], 
+      RectangleBox[{80., 0.}, 
+       NCache[{81., Rational[291, 4000000]}, {81., 0.00007275}],
+       RoundingRadius->0], 
+      RectangleBox[{81., 0.}, 
+       NCache[{82., Rational[1459, 20000000]}, {82., 0.00007295}],
+       RoundingRadius->0], 
+      RectangleBox[{82., 0.}, 
+       NCache[{83., Rational[1383, 20000000]}, {83., 0.00006915}],
+       RoundingRadius->0], 
+      RectangleBox[{83., 0.}, 
+       NCache[{84., Rational[181, 20000000]}, {84., 9.05*^-6}],
+       RoundingRadius->0]}, {}, {}}, {{}, 
+     {RGBColor[0.368417, 0.506779, 0.709798], Opacity[0.5], EdgeForm[{Opacity[
+      0.147], Thickness[Small]}], 
+      RectangleBox[{5., 0.}, 
+       NCache[{6., Rational[409733, 20000000]}, {6., 0.02048665}],
+       RoundingRadius->0], 
+      RectangleBox[{6., 0.}, 
+       NCache[{7., Rational[665427, 4000000]}, {7., 0.16635675}],
+       RoundingRadius->0], 
+      RectangleBox[{7., 0.}, 
+       NCache[{8., Rational[4439683, 20000000]}, {8., 0.22198415}],
+       RoundingRadius->0], 
+      RectangleBox[{8., 0.}, 
+       NCache[{9., Rational[1789847, 10000000]}, {9., 0.1789847}],
+       RoundingRadius->0], 
+      RectangleBox[{9., 0.}, 
+       NCache[{10., Rational[2290963, 20000000]}, {10., 0.11454815}],
+       RoundingRadius->0], 
+      RectangleBox[{10., 0.}, 
+       NCache[{11., Rational[275401, 4000000]}, {11., 0.06885025}],
+       RoundingRadius->0], 
+      RectangleBox[{11., 0.}, 
+       NCache[{12., Rational[439627, 10000000]}, {12., 0.0439627}],
+       RoundingRadius->0], 
+      RectangleBox[{12., 0.}, 
+       NCache[{13., Rational[616611, 20000000]}, {13., 0.03083055}],
+       RoundingRadius->0], 
+      RectangleBox[{13., 0.}, 
+       NCache[{14., Rational[89851, 4000000]}, {14., 0.02246275}],
+       RoundingRadius->0], 
+      RectangleBox[{14., 0.}, 
+       NCache[{15., Rational[86107, 5000000]}, {15., 0.0172214}],
+       RoundingRadius->0], 
+      RectangleBox[{15., 0.}, 
+       NCache[{16., Rational[8487, 625000]}, {16., 0.0135792}],
+       RoundingRadius->0], 
+      RectangleBox[{16., 0.}, 
+       NCache[{17., Rational[219969, 20000000]}, {17., 0.01099845}],
+       RoundingRadius->0], 
+      RectangleBox[{17., 0.}, 
+       NCache[{18., Rational[182499, 20000000]}, {18., 0.00912495}],
+       RoundingRadius->0], 
+      RectangleBox[{18., 0.}, 
+       NCache[{19., Rational[155767, 20000000]}, {19., 0.00778835}],
+       RoundingRadius->0], 
+      RectangleBox[{19., 0.}, 
+       NCache[{20., Rational[67973, 10000000]}, {20., 0.0067973}],
+       RoundingRadius->0], 
+      RectangleBox[{20., 0.}, 
+       NCache[{21., Rational[12037, 2000000]}, {21., 0.0060185}],
+       RoundingRadius->0], 
+      RectangleBox[{21., 0.}, 
+       NCache[{22., Rational[4349, 800000]}, {22., 0.00543625}],
+       RoundingRadius->0], 
+      RectangleBox[{22., 0.}, 
+       NCache[{23., Rational[97741, 20000000]}, {23., 0.00488705}],
+       RoundingRadius->0], 
+      RectangleBox[{23., 0.}, 
+       NCache[{24., Rational[5679, 1250000]}, {24., 0.0045432}],
+       RoundingRadius->0], 
+      RectangleBox[{24., 0.}, 
+       NCache[{25., Rational[8657, 2000000]}, {25., 0.0043285}],
+       RoundingRadius->0], 
+      RectangleBox[{25., 0.}, 
+       NCache[{26., Rational[82073, 20000000]}, {26., 0.00410365}],
+       RoundingRadius->0], 
+      RectangleBox[{26., 0.}, 
+       NCache[{27., Rational[79219, 20000000]}, {27., 0.00396095}],
+       RoundingRadius->0], 
+      RectangleBox[{27., 0.}, 
+       NCache[{28., Rational[76663, 20000000]}, {28., 0.00383315}],
+       RoundingRadius->0], 
+      RectangleBox[{28., 0.}, 
+       NCache[{29., Rational[37513, 10000000]}, {29., 0.0037513}],
+       RoundingRadius->0], 
+      RectangleBox[{29., 0.}, 
+       NCache[{30., Rational[73007, 20000000]}, {30., 0.00365035}],
+       RoundingRadius->0], 
+      RectangleBox[{30., 0.}, 
+       NCache[{31., Rational[14187, 4000000]}, {31., 0.00354675}],
+       RoundingRadius->0], 
+      RectangleBox[{31., 0.}, 
+       NCache[{32., Rational[67517, 20000000]}, {32., 0.00337585}],
+       RoundingRadius->0], 
+      RectangleBox[{32., 0.}, 
+       NCache[{33., Rational[239, 78125]}, {33., 0.0030592}],
+       RoundingRadius->0], 
+      RectangleBox[{33., 0.}, 
+       NCache[{34., Rational[203, 80000]}, {34., 0.0025375}],
+       RoundingRadius->0], 
+      RectangleBox[{34., 0.}, 
+       NCache[{35., Rational[38571, 20000000]}, {35., 0.00192855}],
+       RoundingRadius->0], 
+      RectangleBox[{35., 0.}, 
+       NCache[{36., Rational[25803, 20000000]}, {36., 0.00129015}],
+       RoundingRadius->0], 
+      RectangleBox[{36., 0.}, 
+       NCache[{37., Rational[2097, 2500000]}, {37., 0.0008388}],
+       RoundingRadius->0], 
+      RectangleBox[{37., 0.}, 
+       NCache[{38., Rational[11161, 20000000]}, {38., 0.00055805}],
+       RoundingRadius->0], 
+      RectangleBox[{38., 0.}, 
+       NCache[{39., Rational[4147, 10000000]}, {39., 0.0004147}],
+       RoundingRadius->0], 
+      RectangleBox[{39., 0.}, 
+       NCache[{40., Rational[7087, 20000000]}, {40., 0.00035435}],
+       RoundingRadius->0], 
+      RectangleBox[{40., 0.}, 
+       NCache[{41., Rational[6331, 20000000]}, {41., 0.00031655}],
+       RoundingRadius->0], 
+      RectangleBox[{41., 0.}, 
+       NCache[{42., Rational[5619, 20000000]}, {42., 0.00028095}],
+       RoundingRadius->0], 
+      RectangleBox[{42., 0.}, 
+       NCache[{43., Rational[1293, 5000000]}, {43., 0.0002586}],
+       RoundingRadius->0], 
+      RectangleBox[{43., 0.}, 
+       NCache[{44., Rational[1193, 5000000]}, {44., 0.0002386}],
+       RoundingRadius->0], 
+      RectangleBox[{44., 0.}, 
+       NCache[{45., Rational[859, 4000000]}, {45., 0.00021475}],
+       RoundingRadius->0], 
+      RectangleBox[{45., 0.}, 
+       NCache[{46., Rational[401, 2000000]}, {46., 0.0002005}],
+       RoundingRadius->0], 
+      RectangleBox[{46., 0.}, 
+       NCache[{47., Rational[1787, 10000000]}, {47., 0.0001787}],
+       RoundingRadius->0], 
+      RectangleBox[{47., 0.}, 
+       NCache[{48., Rational[3317, 20000000]}, {48., 0.00016585}],
+       RoundingRadius->0], 
+      RectangleBox[{48., 0.}, 
+       NCache[{49., Rational[1557, 10000000]}, {49., 0.0001557}],
+       RoundingRadius->0], 
+      RectangleBox[{49., 0.}, 
+       NCache[{50., Rational[2781, 20000000]}, {50., 0.00013905}],
+       RoundingRadius->0], 
+      RectangleBox[{50., 0.}, 
+       NCache[{51., Rational[1349, 10000000]}, {51., 0.0001349}],
+       RoundingRadius->0], 
+      RectangleBox[{51., 0.}, 
+       NCache[{52., Rational[239, 2000000]}, {52., 0.0001195}],
+       RoundingRadius->0], 
+      RectangleBox[{52., 0.}, 
+       NCache[{53., Rational[1087, 10000000]}, {53., 0.0001087}],
+       RoundingRadius->0], 
+      RectangleBox[{53., 0.}, 
+       NCache[{54., Rational[1991, 20000000]}, {54., 0.00009955}],
+       RoundingRadius->0], 
+      RectangleBox[{54., 0.}, 
+       NCache[{55., Rational[1877, 20000000]}, {55., 0.00009385}],
+       RoundingRadius->0], 
+      RectangleBox[{55., 0.}, 
+       NCache[{56., Rational[431, 5000000]}, {56., 0.0000862}],
+       RoundingRadius->0], 
+      RectangleBox[{56., 0.}, 
+       NCache[{57., Rational[791, 10000000]}, {57., 0.0000791}],
+       RoundingRadius->0], 
+      RectangleBox[{57., 0.}, 
+       NCache[{58., Rational[699, 10000000]}, {58., 0.0000699}],
+       RoundingRadius->0], 
+      RectangleBox[{58., 0.}, 
+       NCache[{59., Rational[259, 4000000]}, {59., 0.00006475}],
+       RoundingRadius->0], 
+      RectangleBox[{59., 0.}, 
+       NCache[{60., Rational[647, 10000000]}, {60., 0.0000647}],
+       RoundingRadius->0], 
+      RectangleBox[{60., 0.}, 
+       NCache[{61., Rational[9, 160000]}, {61., 0.00005625}],
+       RoundingRadius->0], 
+      RectangleBox[{61., 0.}, 
+       NCache[{62., Rational[511, 10000000]}, {62., 0.0000511}],
+       RoundingRadius->0], 
+      RectangleBox[{62., 0.}, 
+       NCache[{63., Rational[209, 4000000]}, {63., 0.00005225}],
+       RoundingRadius->0], 
+      RectangleBox[{63., 0.}, 
+       NCache[{64., Rational[171, 4000000]}, {64., 0.00004275}],
+       RoundingRadius->0], 
+      RectangleBox[{64., 0.}, 
+       NCache[{65., Rational[809, 20000000]}, {65., 0.00004045}],
+       RoundingRadius->0], 
+      RectangleBox[{65., 0.}, 
+       NCache[{66., Rational[147, 4000000]}, {66., 0.00003675}],
+       RoundingRadius->0], 
+      RectangleBox[{66., 0.}, 
+       NCache[{67., Rational[343, 10000000]}, {67., 0.0000343}],
+       RoundingRadius->0], 
+      RectangleBox[{67., 0.}, 
+       NCache[{68., Rational[77, 2500000]}, {68., 0.0000308}],
+       RoundingRadius->0], 
+      RectangleBox[{68., 0.}, 
+       NCache[{69., Rational[69, 2500000]}, {69., 0.0000276}],
+       RoundingRadius->0], 
+      RectangleBox[{69., 0.}, 
+       NCache[{70., Rational[529, 20000000]}, {70., 0.00002645}],
+       RoundingRadius->0], 
+      RectangleBox[{70., 0.}, 
+       NCache[{71., Rational[439, 20000000]}, {71., 0.00002195}],
+       RoundingRadius->0], 
+      RectangleBox[{71., 0.}, 
+       NCache[{72., Rational[41, 2000000]}, {72., 0.0000205}],
+       RoundingRadius->0], 
+      RectangleBox[{72., 0.}, 
+       NCache[{73., Rational[333, 20000000]}, {73., 0.00001665}],
+       RoundingRadius->0], 
+      RectangleBox[{73., 0.}, 
+       NCache[{74., Rational[9, 625000]}, {74., 0.0000144}],
+       RoundingRadius->0], 
+      RectangleBox[{74., 0.}, 
+       NCache[{75., Rational[269, 20000000]}, {75., 0.00001345}],
+       RoundingRadius->0], 
+      RectangleBox[{75., 0.}, 
+       NCache[{76., Rational[233, 20000000]}, {76., 0.00001165}],
+       RoundingRadius->0], 
+      RectangleBox[{76., 0.}, 
+       NCache[{77., Rational[43, 4000000]}, {77., 0.00001075}],
+       RoundingRadius->0], 
+      RectangleBox[{77., 0.}, 
+       NCache[{78., Rational[181, 20000000]}, {78., 9.05*^-6}],
+       RoundingRadius->0], 
+      RectangleBox[{78., 0.}, 
+       NCache[{79., Rational[71, 10000000]}, {79., 7.1*^-6}],
+       RoundingRadius->0], 
+      RectangleBox[{79., 0.}, 
+       NCache[{80., Rational[23, 4000000]}, {80., 5.75*^-6}],
+       RoundingRadius->0], 
+      RectangleBox[{80., 0.}, 
+       NCache[{81., Rational[81, 20000000]}, {81., 4.05*^-6}],
+       RoundingRadius->0], 
+      RectangleBox[{81., 0.}, 
+       NCache[{82., Rational[19, 10000000]}, {82., 1.9*^-6}],
+       RoundingRadius->0], 
+      RectangleBox[{82., 0.}, 
+       NCache[{83., Rational[11, 20000000]}, {83., 5.5*^-7}],
+       RoundingRadius->0], 
+      RectangleBox[{83., 0.}, 
+       NCache[{84., Rational[1, 20000000]}, {84., 5.*^-8}],
+       RoundingRadius->
+        0]}, {}, {}}}, {{{{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, \
+{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, \
+{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, \
+{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, \
+{}, {}, {}, {}, {}, {}, {}}, {}}, {{{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, \
+{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, \
+{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, \
+{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, \
+{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}}, {}}}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{None, None},
+  AxesOrigin->{3.42, 0.},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  PlotRange->{{5., 84.}, {All, All}},
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.02], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{3.896981175700284*^9, 3.8970351636462183`*^9, 
+  3.897037809053937*^9, 3.8971307139110403`*^9},
+ CellLabel->"Out[36]=",ExpressionUUID->"d56227cb-6b6b-42b4-a619-89afe97ad421"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Main results:", "Section",
+ CellChangeTimes->{{3.89703496675226*^9, 
+  3.8970349696867447`*^9}},ExpressionUUID->"f4c4515f-3015-4066-832e-\
+4dbefcfc602d"],
+
+Cell[BoxData[{
  RowBox[{
   RowBox[{
    RowBox[{
@@ -2212,10 +2532,10 @@ Cell[BoxData[{
       RowBox[{
        RowBox[{"\[ScriptCapitalD]M2FormationEmp", "[", 
         RowBox[{"0.4", ",", " ", "opts"}], "]"}], ",", " ", "mMin"}], "]"}], 
-     StyleBox["71",
+     StyleBox["69",
       FontColor->RGBColor[1, 0.5, 0.5]]]}], ";"}], " ", 
   RowBox[{"(*", 
-   RowBox[{"Assumes", " ", "71", " ", "m2", " ", "BH", " ", 
+   RowBox[{"Assumes", " ", "69", " ", "m2", " ", "BH", " ", 
     RowBox[{"masses", "."}]}], "*)"}]}], "\n", 
  RowBox[{
   RowBox[{
@@ -2230,7 +2550,7 @@ Cell[BoxData[{
       RowBox[{"\[ScriptCapitalD]M2FormationEmp", "[", 
        RowBox[{"0.4", ",", " ", "opts"}], "]"}], ",", " ", "mMin"}], "]"}], 
     StyleBox[
-     RowBox[{"2", "*", "71"}],
+     RowBox[{"2", "*", "69"}],
      FontColor->RGBColor[1, 0.5, 0.5]]]}], ";"}]}], "Code",
  CellChangeTimes->{{3.893587918081071*^9, 3.893587981798483*^9}, 
    3.893588021322073*^9, {3.893588077680015*^9, 3.893588088447797*^9}, {
@@ -2273,550 +2593,53 @@ Cell[BoxData[{
    3.896371915516514*^9, 3.896371915913479*^9}, {3.896371972779915*^9, 
    3.8963720624319277`*^9}, {3.896936795419002*^9, 3.8969368758098307`*^9}, {
    3.897034902328765*^9, 3.897034918994795*^9}, {3.897034952086927*^9, 
-   3.8970349525316477`*^9}},
- CellLabel->"In[19]:=",ExpressionUUID->"afe5a2a6-c413-49ab-9d52-d446ff0bf8d4"],
+   3.8970349525316477`*^9}, {3.897129441123643*^9, 3.8971294732517433`*^9}},
+ CellLabel->"In[37]:=",ExpressionUUID->"d0a1d77c-1781-484e-ae18-e786167dbf85"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"probabilityMminApprox2", "[", "2", "]"}], ",", " ", 
+   RowBox[{"findSigma", "@", 
+    RowBox[{"probabilityMminApprox2", "[", "2", "]"}]}]}], "}"}]], "Code",
+ CellLabel->"In[39]:=",ExpressionUUID->"7f89f8c3-6d36-44f1-bbf0-8ab6c832059a"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"0.00007159941350416846`", ",", "3.970907376917002`"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.897130947551915*^9},
+ CellLabel->"Out[39]=",ExpressionUUID->"3dff6637-ee51-40f9-b9b7-f0c7fb184a1e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{
-  TagBox["\<\"dataM2Merger\"\>",
-   "EchoLabel"], "  ", "166.993385`"}]], "EchoTiming",
- CellChangeTimes->{
-  3.897037801112419*^9},ExpressionUUID->"869f923f-a089-4ba7-8b86-\
-42c0b954f63e"]
+  SuperscriptBox["0.00007159941350416846`", 
+   RowBox[{"72", "/", "69"}]], " ", "//", " ", "findSigma"}]], "Code",
+ CellChangeTimes->{{3.897131001849021*^9, 3.8971310344928303`*^9}},
+ CellLabel->"In[42]:=",ExpressionUUID->"b8bce0be-bd85-4453-9842-4f6b28a069a8"],
+
+Cell[BoxData["4.068675400508565`"], "Output",
+ CellChangeTimes->{{3.8971310181856403`*^9, 3.897131035301463*^9}},
+ CellLabel->"Out[42]=",ExpressionUUID->"76733e08-a275-4dbe-8584-b71478399a87"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"Histogram", "[", 
+ RowBox[{"{", 
   RowBox[{
-   RowBox[{"{", 
-    RowBox[{"dataM1Merger", ",", " ", "dataM2Merger"}], "}"}], ",", " ", 
-   RowBox[{"{", "1", "}"}], ",", " ", "\"\<PDF\>\"", ",", " ", 
-   RowBox[{"PlotRange", "->", "All"}]}], "]"}]], "Code",
- CellLabel->"In[34]:=",ExpressionUUID->"3e2fa93b-abc7-4f34-8848-9e94230a7dec"],
-
-Cell[BoxData[
- GraphicsBox[{
-   {RGBColor[0.987148, 0.8073604000000001, 0.49470040000000004`], EdgeForm[{
-    Opacity[0.147], Thickness[Small]}], {{}, 
-     {RGBColor[0.97858, 0.678934, 0.157834], Opacity[0.5], EdgeForm[{Opacity[
-      0.147], Thickness[Small]}], 
-      RectangleBox[{7., 0.}, 
-       NCache[{8., Rational[2785819, 20000000]}, {8., 0.13929095}],
-       RoundingRadius->0], 
-      RectangleBox[{8., 0.}, 
-       NCache[{9., Rational[1785881, 10000000]}, {9., 0.1785881}],
-       RoundingRadius->0], 
-      RectangleBox[{9., 0.}, 
-       NCache[{10., Rational[729161, 5000000]}, {10., 0.1458322}],
-       RoundingRadius->0], 
-      RectangleBox[{10., 0.}, 
-       NCache[{11., Rational[1031863, 10000000]}, {11., 0.1031863}],
-       RoundingRadius->0], 
-      RectangleBox[{11., 0.}, 
-       NCache[{12., Rational[1493347, 20000000]}, {12., 0.07466735}],
-       RoundingRadius->0], 
-      RectangleBox[{12., 0.}, 
-       NCache[{13., Rational[221737, 4000000]}, {13., 0.05543425}],
-       RoundingRadius->0], 
-      RectangleBox[{13., 0.}, 
-       NCache[{14., Rational[33759, 800000]}, {14., 0.04219875}],
-       RoundingRadius->0], 
-      RectangleBox[{14., 0.}, 
-       NCache[{15., Rational[655283, 20000000]}, {15., 0.03276415}],
-       RoundingRadius->0], 
-      RectangleBox[{15., 0.}, 
-       NCache[{16., Rational[259807, 10000000]}, {16., 0.0259807}],
-       RoundingRadius->0], 
-      RectangleBox[{16., 0.}, 
-       NCache[{17., Rational[5163, 250000]}, {17., 0.020652}],
-       RoundingRadius->0], 
-      RectangleBox[{17., 0.}, 
-       NCache[{18., Rational[336209, 20000000]}, {18., 0.01681045}],
-       RoundingRadius->0], 
-      RectangleBox[{18., 0.}, 
-       NCache[{19., Rational[138323, 10000000]}, {19., 0.0138323}],
-       RoundingRadius->0], 
-      RectangleBox[{19., 0.}, 
-       NCache[{20., Rational[227629, 20000000]}, {20., 0.01138145}],
-       RoundingRadius->0], 
-      RectangleBox[{20., 0.}, 
-       NCache[{21., Rational[190761, 20000000]}, {21., 0.00953805}],
-       RoundingRadius->0], 
-      RectangleBox[{21., 0.}, 
-       NCache[{22., Rational[161721, 20000000]}, {22., 0.00808605}],
-       RoundingRadius->0], 
-      RectangleBox[{22., 0.}, 
-       NCache[{23., Rational[137631, 20000000]}, {23., 0.00688155}],
-       RoundingRadius->0], 
-      RectangleBox[{23., 0.}, 
-       NCache[{24., Rational[58963, 10000000]}, {24., 0.0058963}],
-       RoundingRadius->0], 
-      RectangleBox[{24., 0.}, 
-       NCache[{25., Rational[50821, 10000000]}, {25., 0.0050821}],
-       RoundingRadius->0], 
-      RectangleBox[{25., 0.}, 
-       NCache[{26., Rational[88559, 20000000]}, {26., 0.00442795}],
-       RoundingRadius->0], 
-      RectangleBox[{26., 0.}, 
-       NCache[{27., Rational[76829, 20000000]}, {27., 0.00384145}],
-       RoundingRadius->0], 
-      RectangleBox[{27., 0.}, 
-       NCache[{28., Rational[13579, 4000000]}, {28., 0.00339475}],
-       RoundingRadius->0], 
-      RectangleBox[{28., 0.}, 
-       NCache[{29., Rational[61031, 20000000]}, {29., 0.00305155}],
-       RoundingRadius->0], 
-      RectangleBox[{29., 0.}, 
-       NCache[{30., Rational[60163, 20000000]}, {30., 0.00300815}],
-       RoundingRadius->0], 
-      RectangleBox[{30., 0.}, 
-       NCache[{31., Rational[1861, 500000]}, {31., 0.003722}],
-       RoundingRadius->0], 
-      RectangleBox[{31., 0.}, 
-       NCache[{32., Rational[11483, 2000000]}, {32., 0.0057415}],
-       RoundingRadius->0], 
-      RectangleBox[{32., 0.}, 
-       NCache[{33., Rational[183691, 20000000]}, {33., 0.00918455}],
-       RoundingRadius->0], 
-      RectangleBox[{33., 0.}, 
-       NCache[{34., Rational[254803, 20000000]}, {34., 0.01274015}],
-       RoundingRadius->0], 
-      RectangleBox[{34., 0.}, 
-       NCache[{35., Rational[282389, 20000000]}, {35., 0.01411945}],
-       RoundingRadius->0], 
-      RectangleBox[{35., 0.}, 
-       NCache[{36., Rational[244403, 20000000]}, {36., 0.01222015}],
-       RoundingRadius->0], 
-      RectangleBox[{36., 0.}, 
-       NCache[{37., Rational[41453, 5000000]}, {37., 0.0082906}],
-       RoundingRadius->0], 
-      RectangleBox[{37., 0.}, 
-       NCache[{38., Rational[45981, 10000000]}, {38., 0.0045981}],
-       RoundingRadius->0], 
-      RectangleBox[{38., 0.}, 
-       NCache[{39., Rational[45937, 20000000]}, {39., 0.00229685}],
-       RoundingRadius->0], 
-      RectangleBox[{39., 0.}, 
-       NCache[{40., Rational[26153, 20000000]}, {40., 0.00130765}],
-       RoundingRadius->0], 
-      RectangleBox[{40., 0.}, 
-       NCache[{41., Rational[18887, 20000000]}, {41., 0.00094435}],
-       RoundingRadius->0], 
-      RectangleBox[{41., 0.}, 
-       NCache[{42., Rational[15997, 20000000]}, {42., 0.00079985}],
-       RoundingRadius->0], 
-      RectangleBox[{42., 0.}, 
-       NCache[{43., Rational[7183, 10000000]}, {43., 0.0007183}],
-       RoundingRadius->0], 
-      RectangleBox[{43., 0.}, 
-       NCache[{44., Rational[3313, 5000000]}, {44., 0.0006626}],
-       RoundingRadius->0], 
-      RectangleBox[{44., 0.}, 
-       NCache[{45., Rational[1227, 2000000]}, {45., 0.0006135}],
-       RoundingRadius->0], 
-      RectangleBox[{45., 0.}, 
-       NCache[{46., Rational[11301, 20000000]}, {46., 0.00056505}],
-       RoundingRadius->0], 
-      RectangleBox[{46., 0.}, 
-       NCache[{47., Rational[10461, 20000000]}, {47., 0.00052305}],
-       RoundingRadius->0], 
-      RectangleBox[{47., 0.}, 
-       NCache[{48., Rational[9697, 20000000]}, {48., 0.00048485}],
-       RoundingRadius->0], 
-      RectangleBox[{48., 0.}, 
-       NCache[{49., Rational[891, 2000000]}, {49., 0.0004455}],
-       RoundingRadius->0], 
-      RectangleBox[{49., 0.}, 
-       NCache[{50., Rational[8241, 20000000]}, {50., 0.00041205}],
-       RoundingRadius->0], 
-      RectangleBox[{50., 0.}, 
-       NCache[{51., Rational[319, 800000]}, {51., 0.00039875}],
-       RoundingRadius->0], 
-      RectangleBox[{51., 0.}, 
-       NCache[{52., Rational[1441, 4000000]}, {52., 0.00036025}],
-       RoundingRadius->0], 
-      RectangleBox[{52., 0.}, 
-       NCache[{53., Rational[1701, 5000000]}, {53., 0.0003402}],
-       RoundingRadius->0], 
-      RectangleBox[{53., 0.}, 
-       NCache[{54., Rational[6351, 20000000]}, {54., 0.00031755}],
-       RoundingRadius->0], 
-      RectangleBox[{54., 0.}, 
-       NCache[{55., Rational[19, 62500]}, {55., 0.000304}],
-       RoundingRadius->0], 
-      RectangleBox[{55., 0.}, 
-       NCache[{56., Rational[2811, 10000000]}, {56., 0.0002811}],
-       RoundingRadius->0], 
-      RectangleBox[{56., 0.}, 
-       NCache[{57., Rational[329, 1250000]}, {57., 0.0002632}],
-       RoundingRadius->0], 
-      RectangleBox[{57., 0.}, 
-       NCache[{58., Rational[2461, 10000000]}, {58., 0.0002461}],
-       RoundingRadius->0], 
-      RectangleBox[{58., 0.}, 
-       NCache[{59., Rational[4663, 20000000]}, {59., 0.00023315}],
-       RoundingRadius->0], 
-      RectangleBox[{59., 0.}, 
-       NCache[{60., Rational[4431, 20000000]}, {60., 0.00022155}],
-       RoundingRadius->0], 
-      RectangleBox[{60., 0.}, 
-       NCache[{61., Rational[1017, 5000000]}, {61., 0.0002034}],
-       RoundingRadius->0], 
-      RectangleBox[{61., 0.}, 
-       NCache[{62., Rational[783, 4000000]}, {62., 0.00019575}],
-       RoundingRadius->0], 
-      RectangleBox[{62., 0.}, 
-       NCache[{63., Rational[929, 5000000]}, {63., 0.0001858}],
-       RoundingRadius->0], 
-      RectangleBox[{63., 0.}, 
-       NCache[{64., Rational[879, 5000000]}, {64., 0.0001758}],
-       RoundingRadius->0], 
-      RectangleBox[{64., 0.}, 
-       NCache[{65., Rational[827, 5000000]}, {65., 0.0001654}],
-       RoundingRadius->0], 
-      RectangleBox[{65., 0.}, 
-       NCache[{66., Rational[3069, 20000000]}, {66., 0.00015345}],
-       RoundingRadius->0], 
-      RectangleBox[{66., 0.}, 
-       NCache[{67., Rational[369, 2500000]}, {67., 0.0001476}],
-       RoundingRadius->0], 
-      RectangleBox[{67., 0.}, 
-       NCache[{68., Rational[2869, 20000000]}, {68., 0.00014345}],
-       RoundingRadius->0], 
-      RectangleBox[{68., 0.}, 
-       NCache[{69., Rational[2627, 20000000]}, {69., 0.00013135}],
-       RoundingRadius->0], 
-      RectangleBox[{69., 0.}, 
-       NCache[{70., Rational[251, 2000000]}, {70., 0.0001255}],
-       RoundingRadius->0], 
-      RectangleBox[{70., 0.}, 
-       NCache[{71., Rational[2383, 20000000]}, {71., 0.00011915}],
-       RoundingRadius->0], 
-      RectangleBox[{71., 0.}, 
-       NCache[{72., Rational[561, 5000000]}, {72., 0.0001122}],
-       RoundingRadius->0], 
-      RectangleBox[{72., 0.}, 
-       NCache[{73., Rational[2197, 20000000]}, {73., 0.00010985}],
-       RoundingRadius->0], 
-      RectangleBox[{73., 0.}, 
-       NCache[{74., Rational[1989, 20000000]}, {74., 0.00009945}],
-       RoundingRadius->0], 
-      RectangleBox[{74., 0.}, 
-       NCache[{75., Rational[479, 5000000]}, {75., 0.0000958}],
-       RoundingRadius->0], 
-      RectangleBox[{75., 0.}, 
-       NCache[{76., Rational[1837, 20000000]}, {76., 0.00009185}],
-       RoundingRadius->0], 
-      RectangleBox[{76., 0.}, 
-       NCache[{77., Rational[911, 10000000]}, {77., 0.0000911}],
-       RoundingRadius->0], 
-      RectangleBox[{77., 0.}, 
-       NCache[{78., Rational[1697, 20000000]}, {78., 0.00008485}],
-       RoundingRadius->0], 
-      RectangleBox[{78., 0.}, 
-       NCache[{79., Rational[197, 2500000]}, {79., 0.0000788}],
-       RoundingRadius->0], 
-      RectangleBox[{79., 0.}, 
-       NCache[{80., Rational[1619, 20000000]}, {80., 0.00008095}],
-       RoundingRadius->0], 
-      RectangleBox[{80., 0.}, 
-       NCache[{81., Rational[1507, 20000000]}, {81., 0.00007535}],
-       RoundingRadius->0], 
-      RectangleBox[{81., 0.}, 
-       NCache[{82., Rational[1401, 20000000]}, {82., 0.00007005}],
-       RoundingRadius->0], 
-      RectangleBox[{82., 0.}, 
-       NCache[{83., Rational[1423, 20000000]}, {83., 0.00007115}],
-       RoundingRadius->0], 
-      RectangleBox[{83., 0.}, 
-       NCache[{84., Rational[183, 20000000]}, {84., 9.15*^-6}],
-       RoundingRadius->0]}, {}, {}}, {{}, 
-     {RGBColor[0.368417, 0.506779, 0.709798], Opacity[0.5], EdgeForm[{Opacity[
-      0.147], Thickness[Small]}], 
-      RectangleBox[{5., 0.}, 
-       NCache[{6., Rational[410419, 20000000]}, {6., 0.02052095}],
-       RoundingRadius->0], 
-      RectangleBox[{6., 0.}, 
-       NCache[{7., Rational[665221, 4000000]}, {7., 0.16630525}],
-       RoundingRadius->0], 
-      RectangleBox[{7., 0.}, 
-       NCache[{8., Rational[4441973, 20000000]}, {8., 0.22209865}],
-       RoundingRadius->0], 
-      RectangleBox[{8., 0.}, 
-       NCache[{9., Rational[3580471, 20000000]}, {9., 0.17902355}],
-       RoundingRadius->0], 
-      RectangleBox[{9., 0.}, 
-       NCache[{10., Rational[458737, 4000000]}, {10., 0.11468425}],
-       RoundingRadius->0], 
-      RectangleBox[{10., 0.}, 
-       NCache[{11., Rational[171893, 2500000]}, {11., 0.0687572}],
-       RoundingRadius->0], 
-      RectangleBox[{11., 0.}, 
-       NCache[{12., Rational[879963, 20000000]}, {12., 0.04399815}],
-       RoundingRadius->0], 
-      RectangleBox[{12., 0.}, 
-       NCache[{13., Rational[612829, 20000000]}, {13., 0.03064145}],
-       RoundingRadius->0], 
-      RectangleBox[{13., 0.}, 
-       NCache[{14., Rational[450451, 20000000]}, {14., 0.02252255}],
-       RoundingRadius->0], 
-      RectangleBox[{14., 0.}, 
-       NCache[{15., Rational[69051, 4000000]}, {15., 0.01726275}],
-       RoundingRadius->0], 
-      RectangleBox[{15., 0.}, 
-       NCache[{16., Rational[135747, 10000000]}, {16., 0.0135747}],
-       RoundingRadius->0], 
-      RectangleBox[{16., 0.}, 
-       NCache[{17., Rational[54863, 5000000]}, {17., 0.0109726}],
-       RoundingRadius->0], 
-      RectangleBox[{17., 0.}, 
-       NCache[{18., Rational[22931, 2500000]}, {18., 0.0091724}],
-       RoundingRadius->0], 
-      RectangleBox[{18., 0.}, 
-       NCache[{19., Rational[156413, 20000000]}, {19., 0.00782065}],
-       RoundingRadius->0], 
-      RectangleBox[{19., 0.}, 
-       NCache[{20., Rational[33857, 5000000]}, {20., 0.0067714}],
-       RoundingRadius->0], 
-      RectangleBox[{20., 0.}, 
-       NCache[{21., Rational[12013, 2000000]}, {21., 0.0060065}],
-       RoundingRadius->0], 
-      RectangleBox[{21., 0.}, 
-       NCache[{22., Rational[108233, 20000000]}, {22., 0.00541165}],
-       RoundingRadius->0], 
-      RectangleBox[{22., 0.}, 
-       NCache[{23., Rational[97949, 20000000]}, {23., 0.00489745}],
-       RoundingRadius->0], 
-      RectangleBox[{23., 0.}, 
-       NCache[{24., Rational[90793, 20000000]}, {24., 0.00453965}],
-       RoundingRadius->0], 
-      RectangleBox[{24., 0.}, 
-       NCache[{25., Rational[85847, 20000000]}, {25., 0.00429235}],
-       RoundingRadius->0], 
-      RectangleBox[{25., 0.}, 
-       NCache[{26., Rational[5157, 1250000]}, {26., 0.0041256}],
-       RoundingRadius->0], 
-      RectangleBox[{26., 0.}, 
-       NCache[{27., Rational[79217, 20000000]}, {27., 0.00396085}],
-       RoundingRadius->0], 
-      RectangleBox[{27., 0.}, 
-       NCache[{28., Rational[38333, 10000000]}, {28., 0.0038333}],
-       RoundingRadius->0], 
-      RectangleBox[{28., 0.}, 
-       NCache[{29., Rational[37357, 10000000]}, {29., 0.0037357}],
-       RoundingRadius->0], 
-      RectangleBox[{29., 0.}, 
-       NCache[{30., Rational[72691, 20000000]}, {30., 0.00363455}],
-       RoundingRadius->0], 
-      RectangleBox[{30., 0.}, 
-       NCache[{31., Rational[14057, 4000000]}, {31., 0.00351425}],
-       RoundingRadius->0], 
-      RectangleBox[{31., 0.}, 
-       NCache[{32., Rational[33573, 10000000]}, {32., 0.0033573}],
-       RoundingRadius->0], 
-      RectangleBox[{32., 0.}, 
-       NCache[{33., Rational[1521, 500000]}, {33., 0.003042}],
-       RoundingRadius->0], 
-      RectangleBox[{33., 0.}, 
-       NCache[{34., Rational[6413, 2500000]}, {34., 0.0025652}],
-       RoundingRadius->0], 
-      RectangleBox[{34., 0.}, 
-       NCache[{35., Rational[37889, 20000000]}, {35., 0.00189445}],
-       RoundingRadius->0], 
-      RectangleBox[{35., 0.}, 
-       NCache[{36., Rational[647, 500000]}, {36., 0.001294}],
-       RoundingRadius->0], 
-      RectangleBox[{36., 0.}, 
-       NCache[{37., Rational[8363, 10000000]}, {37., 0.0008363}],
-       RoundingRadius->0], 
-      RectangleBox[{37., 0.}, 
-       NCache[{38., Rational[5581, 10000000]}, {38., 0.0005581}],
-       RoundingRadius->0], 
-      RectangleBox[{38., 0.}, 
-       NCache[{39., Rational[2087, 5000000]}, {39., 0.0004174}],
-       RoundingRadius->0], 
-      RectangleBox[{39., 0.}, 
-       NCache[{40., Rational[3543, 10000000]}, {40., 0.0003543}],
-       RoundingRadius->0], 
-      RectangleBox[{40., 0.}, 
-       NCache[{41., Rational[39, 125000]}, {41., 0.000312}],
-       RoundingRadius->0], 
-      RectangleBox[{41., 0.}, 
-       NCache[{42., Rational[567, 2000000]}, {42., 0.0002835}],
-       RoundingRadius->0], 
-      RectangleBox[{42., 0.}, 
-       NCache[{43., Rational[13, 50000]}, {43., 0.00026}],
-       RoundingRadius->0], 
-      RectangleBox[{43., 0.}, 
-       NCache[{44., Rational[2349, 10000000]}, {44., 0.0002349}],
-       RoundingRadius->0], 
-      RectangleBox[{44., 0.}, 
-       NCache[{45., Rational[33, 156250]}, {45., 0.0002112}],
-       RoundingRadius->0], 
-      RectangleBox[{45., 0.}, 
-       NCache[{46., Rational[3953, 20000000]}, {46., 0.00019765}],
-       RoundingRadius->0], 
-      RectangleBox[{46., 0.}, 
-       NCache[{47., Rational[911, 5000000]}, {47., 0.0001822}],
-       RoundingRadius->0], 
-      RectangleBox[{47., 0.}, 
-       NCache[{48., Rational[331, 2000000]}, {48., 0.0001655}],
-       RoundingRadius->0], 
-      RectangleBox[{48., 0.}, 
-       NCache[{49., Rational[3063, 20000000]}, {49., 0.00015315}],
-       RoundingRadius->0], 
-      RectangleBox[{49., 0.}, 
-       NCache[{50., Rational[11, 80000]}, {50., 0.0001375}],
-       RoundingRadius->0], 
-      RectangleBox[{50., 0.}, 
-       NCache[{51., Rational[327, 2500000]}, {51., 0.0001308}],
-       RoundingRadius->0], 
-      RectangleBox[{51., 0.}, 
-       NCache[{52., Rational[2359, 20000000]}, {52., 0.00011795}],
-       RoundingRadius->0], 
-      RectangleBox[{52., 0.}, 
-       NCache[{53., Rational[551, 5000000]}, {53., 0.0001102}],
-       RoundingRadius->0], 
-      RectangleBox[{53., 0.}, 
-       NCache[{54., Rational[2039, 20000000]}, {54., 0.00010195}],
-       RoundingRadius->0], 
-      RectangleBox[{54., 0.}, 
-       NCache[{55., Rational[237, 2500000]}, {55., 0.0000948}],
-       RoundingRadius->0], 
-      RectangleBox[{55., 0.}, 
-       NCache[{56., Rational[1763, 20000000]}, {56., 0.00008815}],
-       RoundingRadius->0], 
-      RectangleBox[{56., 0.}, 
-       NCache[{57., Rational[101, 1250000]}, {57., 0.0000808}],
-       RoundingRadius->0], 
-      RectangleBox[{57., 0.}, 
-       NCache[{58., Rational[739, 10000000]}, {58., 0.0000739}],
-       RoundingRadius->0], 
-      RectangleBox[{58., 0.}, 
-       NCache[{59., Rational[167, 2500000]}, {59., 0.0000668}],
-       RoundingRadius->0], 
-      RectangleBox[{59., 0.}, 
-       NCache[{60., Rational[1201, 20000000]}, {60., 0.00006005}],
-       RoundingRadius->0], 
-      RectangleBox[{60., 0.}, 
-       NCache[{61., Rational[1, 16000]}, {61., 0.0000625}],
-       RoundingRadius->0], 
-      RectangleBox[{61., 0.}, 
-       NCache[{62., Rational[41, 800000]}, {62., 0.00005125}],
-       RoundingRadius->0], 
-      RectangleBox[{62., 0.}, 
-       NCache[{63., Rational[249, 5000000]}, {63., 0.0000498}],
-       RoundingRadius->0], 
-      RectangleBox[{63., 0.}, 
-       NCache[{64., Rational[11, 250000]}, {64., 0.000044}],
-       RoundingRadius->0], 
-      RectangleBox[{64., 0.}, 
-       NCache[{65., Rational[801, 20000000]}, {65., 0.00004005}],
-       RoundingRadius->0], 
-      RectangleBox[{65., 0.}, 
-       NCache[{66., Rational[757, 20000000]}, {66., 0.00003785}],
-       RoundingRadius->0], 
-      RectangleBox[{66., 0.}, 
-       NCache[{67., Rational[7, 200000]}, {67., 0.000035}],
-       RoundingRadius->0], 
-      RectangleBox[{67., 0.}, 
-       NCache[{68., Rational[597, 20000000]}, {68., 0.00002985}],
-       RoundingRadius->0], 
-      RectangleBox[{68., 0.}, 
-       NCache[{69., Rational[543, 20000000]}, {69., 0.00002715}],
-       RoundingRadius->0], 
-      RectangleBox[{69., 0.}, 
-       NCache[{70., Rational[469, 20000000]}, {70., 0.00002345}],
-       RoundingRadius->0], 
-      RectangleBox[{70., 0.}, 
-       NCache[{71., Rational[419, 20000000]}, {71., 0.00002095}],
-       RoundingRadius->0], 
-      RectangleBox[{71., 0.}, 
-       NCache[{72., Rational[429, 20000000]}, {72., 0.00002145}],
-       RoundingRadius->0], 
-      RectangleBox[{72., 0.}, 
-       NCache[{73., Rational[351, 20000000]}, {73., 0.00001755}],
-       RoundingRadius->0], 
-      RectangleBox[{73., 0.}, 
-       NCache[{74., Rational[81, 5000000]}, {74., 0.0000162}],
-       RoundingRadius->0], 
-      RectangleBox[{74., 0.}, 
-       NCache[{75., Rational[9, 625000]}, {75., 0.0000144}],
-       RoundingRadius->0], 
-      RectangleBox[{75., 0.}, 
-       NCache[{76., Rational[127, 10000000]}, {76., 0.0000127}],
-       RoundingRadius->0], 
-      RectangleBox[{76., 0.}, 
-       NCache[{77., Rational[93, 10000000]}, {77., 9.3*^-6}],
-       RoundingRadius->0], 
-      RectangleBox[{77., 0.}, 
-       NCache[{78., Rational[9, 1000000]}, {78., 9.*^-6}],
-       RoundingRadius->0], 
-      RectangleBox[{78., 0.}, 
-       NCache[{79., Rational[131, 20000000]}, {79., 6.55*^-6}],
-       RoundingRadius->0], 
-      RectangleBox[{79., 0.}, 
-       NCache[{80., Rational[11, 2500000]}, {80., 4.4*^-6}],
-       RoundingRadius->0], 
-      RectangleBox[{80., 0.}, 
-       NCache[{81., Rational[3, 1000000]}, {81., 3.*^-6}],
-       RoundingRadius->0], 
-      RectangleBox[{81., 0.}, 
-       NCache[{82., Rational[9, 4000000]}, {82., 2.25*^-6}],
-       RoundingRadius->0], 
-      RectangleBox[{82., 0.}, 
-       NCache[{83., Rational[9, 10000000]}, {83., 9.*^-7}],
-       RoundingRadius->0], 
-      RectangleBox[{83., 0.}, 
-       NCache[{84., Rational[1, 20000000]}, {84., 5.*^-8}],
-       RoundingRadius->
-        0]}, {}, {}}}, {{{{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, \
-{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, \
-{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, \
-{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, \
-{}, {}, {}, {}, {}, {}, {}}, {}}, {{{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, \
-{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, \
-{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, \
-{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, \
-{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}}, {}}}},
-  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
-  Axes->{True, True},
-  AxesLabel->{None, None},
-  AxesOrigin->{3.42, 0.},
-  FrameLabel->{{None, None}, {None, None}},
-  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
-  GridLines->{None, None},
-  GridLinesStyle->Directive[
-    GrayLevel[0.5, 0.4]],
-  PlotRange->{{5., 84.}, {All, All}},
-  PlotRangePadding->{{
-     Scaled[0.02], 
-     Scaled[0.02]}, {
-     Scaled[0.02], 
-     Scaled[0.05]}},
-  Ticks->{Automatic, Automatic}]], "Output",
- CellChangeTimes->{3.896981175700284*^9, 3.8970351636462183`*^9, 
-  3.897037809053937*^9},
- CellLabel->"Out[34]=",ExpressionUUID->"44533c4e-b296-4bd9-b618-18ce7423810d"]
-}, Open  ]]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell["Main results:", "Section",
- CellChangeTimes->{{3.89703496675226*^9, 
-  3.8970349696867447`*^9}},ExpressionUUID->"f4c4515f-3015-4066-832e-\
-4dbefcfc602d"],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"findSigma", "@", 
-  RowBox[{"probabilityMminApprox2", "[", "2", "]"}]}]], "Code",
- CellChangeTimes->{{3.89698131791892*^9, 3.896981324497479*^9}},
- CellLabel->"In[35]:=",ExpressionUUID->"b8dbd5bb-a4cc-4a77-9d6a-f98f47671606"],
+   RowBox[{"probabilityMminApprox2", "[", "2", "]"}], ",", " ", 
+   RowBox[{"findSigma", "@", 
+    RowBox[{"probabilityMminApprox2", "[", "2", "]"}]}]}], "}"}]], "Code",
+ CellChangeTimes->{{3.89698131791892*^9, 3.896981324497479*^9}, {
+  3.897130462038188*^9, 
+  3.8971304861548767`*^9}},ExpressionUUID->"b8dbd5bb-a4cc-4a77-9d6a-\
+f98f47671606"],
 
 Cell[BoxData["4.038973488679583`"], "Output",
  CellChangeTimes->{
@@ -2828,15 +2651,25 @@ Cell[BoxData["4.038973488679583`"], "Output",
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"findSigma", "@", 
-  RowBox[{"probabilityMminDoubleApprox2", "[", "2", "]"}]}]], "Code",
- CellChangeTimes->{{3.896982406758383*^9, 3.896982413128957*^9}},
- CellLabel->"In[36]:=",ExpressionUUID->"e8d9d9ea-095e-4e2b-8a9a-1933aa90c76a"],
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"probabilityMminDoubleApprox2", "[", "2", "]"}], ",", " ", 
+   RowBox[{"findSigma", "@", 
+    RowBox[{"probabilityMminDoubleApprox2", "[", "2", "]"}]}]}], 
+  "}"}]], "Code",
+ CellChangeTimes->{{3.896982406758383*^9, 3.896982413128957*^9}, {
+  3.897130492819487*^9, 3.8971304947723427`*^9}, {3.897131317568323*^9, 
+  3.8971313181787853`*^9}},
+ CellLabel->"In[44]:=",ExpressionUUID->"e8d9d9ea-095e-4e2b-8a9a-1933aa90c76a"],
 
-Cell[BoxData["5.938173635503316`"], "Output",
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"5.126476014140902`*^-9", ",", "5.843013828570301`"}], 
+  "}"}]], "Output",
  CellChangeTimes->{{3.896982407670977*^9, 3.8969824147176456`*^9}, 
-   3.897035174721808*^9, 3.897038031862568*^9},
- CellLabel->"Out[36]=",ExpressionUUID->"c303c08f-555b-45fe-a631-f25e979c4d33"]
+   3.897035174721808*^9, 3.897038031862568*^9, {3.897131313199274*^9, 
+   3.89713131944316*^9}},
+ CellLabel->"Out[44]=",ExpressionUUID->"7db047f3-a0a2-4b3a-a035-61614bf31aa3"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -40973,8 +40806,8 @@ Cell[BoxData["\<\"pathOut/plotPDFformationDist2.pdf\"\>"], "Output",
 },
 AutoGeneratedPackage->None,
 WindowToolbars->"MultipurposeBar",
-WindowSize->{1920, 1027},
-WindowMargins->{{0, Automatic}, {Automatic, 360}},
+WindowSize->{1485, 1169},
+WindowMargins->{{Automatic, 534}, {Automatic, 47}},
 Magnification:>1.5 Inherited,
 FrontEndVersion->"13.2 for Mac OS X x86 (64-bit) (January 30, 2023)",
 StyleDefinitions->Notebook[{
@@ -41391,7 +41224,7 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 363, 7, 146, "Title",ExpressionUUID->"653c41f3-823d-4cf8-b781-a41f077bbcfc"],
+Cell[580, 22, 363, 7, 238, "Title",ExpressionUUID->"653c41f3-823d-4cf8-b781-a41f077bbcfc"],
 Cell[946, 31, 259, 4, 47, "Author",ExpressionUUID->"73931733-b35f-48f8-8bcc-eb6ec5be6ab0"],
 Cell[1208, 37, 261, 6, 38, "Input",ExpressionUUID->"ddd5e9c3-34d0-4b0a-b34b-8a5223c82817"],
 Cell[1472, 45, 1074, 22, 324, "Text",ExpressionUUID->"016fe98b-06ed-4f73-a9ab-838e95c37502"],
@@ -41400,91 +41233,78 @@ Cell[2571, 71, 156, 3, 101, "Section",ExpressionUUID->"35ad3a7f-17be-4ab9-ad4a-e
 Cell[CellGroupData[{
 Cell[2752, 78, 9081, 176, 954, "Code",ExpressionUUID->"f5b666ab-d61b-4cc4-894c-abef1813a8b9"],
 Cell[CellGroupData[{
-Cell[11858, 258, 831, 13, 38, "Print",ExpressionUUID->"bddcc1e8-7a8d-4636-8fff-fc998343492e"],
-Cell[12692, 273, 844, 13, 38, "Print",ExpressionUUID->"5e6ad956-aab9-4271-b0b1-656c3a2bc3d9"],
-Cell[13539, 288, 211, 6, 38, "Echo",ExpressionUUID->"5c11bcb3-9d02-49ba-88c6-bc58bd1ceb95"]
-}, Open  ]],
-Cell[13765, 297, 675, 14, 43, "Message",ExpressionUUID->"d9a77665-e85f-4faa-ac40-ded24ba4e907"],
-Cell[14443, 313, 763, 15, 43, "Message",ExpressionUUID->"d67ef3e0-2d08-48d8-b8da-1f8af5b13d94"],
-Cell[15209, 330, 763, 15, 43, "Message",ExpressionUUID->"a1d38565-f419-492a-aeaa-c7e3cf11816c"],
-Cell[15975, 347, 835, 16, 43, "Message",ExpressionUUID->"eb5e9ecd-473c-4275-ac90-0b3cc8aac24c"],
-Cell[16813, 365, 924, 17, 43, "Message",ExpressionUUID->"1e9a68c6-ea78-499c-8364-6dafd97420e1"],
-Cell[17740, 384, 447, 10, 43, "Message",ExpressionUUID->"1ed03915-396f-4efb-a0b2-cfe60812ad9a"],
-Cell[18190, 396, 836, 16, 43, "Message",ExpressionUUID->"b7c1b606-bf17-49f7-85da-77e578357f24"],
-Cell[19029, 414, 450, 10, 43, "Message",ExpressionUUID->"97dd53a2-d750-4973-924d-6a353c1a411b"],
-Cell[19482, 426, 3619, 54, 105, "Message",ExpressionUUID->"f76aa580-fcac-4dd6-becd-1127197a6d51"],
-Cell[CellGroupData[{
-Cell[23126, 484, 846, 13, 38, "Print",ExpressionUUID->"3bf0b203-107c-44ea-8ecc-9eb218c2c3cb"],
-Cell[23975, 499, 347, 8, 38, "Echo",ExpressionUUID->"b45f3d52-c0dc-42e1-b6e0-3b3ccd85d043"],
-Cell[24325, 509, 829, 13, 38, "Print",ExpressionUUID->"e3a843ac-dff2-4017-8da7-d77367940ac3"],
-Cell[25157, 524, 158, 3, 38, "Echo",ExpressionUUID->"e586a198-99f0-432d-88ba-0734c25ea081"],
-Cell[25318, 529, 840, 13, 38, "Print",ExpressionUUID->"7d799fee-c9ed-4b7a-9874-1e01c499a90e"],
-Cell[26161, 544, 260, 7, 38, "Echo",ExpressionUUID->"6cf407a6-9803-40e8-a9aa-f18cebaf5a63"],
-Cell[26424, 553, 214, 6, 38, "EchoTiming",ExpressionUUID->"e2e52afa-15cb-40e4-8574-dedef8299076"],
-Cell[26641, 561, 830, 13, 38, "Print",ExpressionUUID->"60100892-1c40-48d6-8d8a-6d13f8f512a9"]
-}, Open  ]]
-}, Open  ]],
-Cell[27498, 578, 314, 5, 54, "Code",ExpressionUUID->"b620e25a-564e-451f-b3da-982fd47cd571"],
-Cell[27815, 585, 176, 2, 54, "Code",ExpressionUUID->"5e0d941a-ddd4-4056-8f19-66e864d664ff"],
-Cell[CellGroupData[{
-Cell[28016, 591, 219, 3, 54, "Code",ExpressionUUID->"c1bf9500-2a7b-45da-9f5f-1487bf5a0431"],
-Cell[28238, 596, 3146, 48, 289, "Output",ExpressionUUID->"54f06ac4-c4d8-4e96-87bc-2911da0a92f6"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[31421, 649, 185, 2, 54, "Code",ExpressionUUID->"10f63313-5794-4159-81d2-e3dd165b3bc8"],
-Cell[31609, 653, 156, 2, 40, "Output",ExpressionUUID->"277ce597-2d1e-4ebb-bd1a-726ce2296448"]
-}, Open  ]],
-Cell[31780, 658, 199, 3, 54, "Code",ExpressionUUID->"fc2f3221-0e7c-406c-a643-d5424f050b75"],
-Cell[CellGroupData[{
-Cell[32004, 665, 1302, 27, 179, "Code",ExpressionUUID->"07981432-12d5-4c52-9319-afa4f17d5b8e"],
-Cell[33309, 694, 16031, 403, 832, "Output",ExpressionUUID->"b06ba113-cc89-4407-be7d-a32101a4fac8"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[49377, 1102, 718, 16, 54, "Code",ExpressionUUID->"df74f3be-4f72-4796-ae7b-51acf8847dfb"],
-Cell[50098, 1120, 17203, 307, 343, "Output",ExpressionUUID->"683dc78e-cc32-4eb4-aca6-f90096b36687"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[67338, 1432, 528, 12, 54, "Code",ExpressionUUID->"800386a4-5841-4d13-888b-baf0da8ed2b7"],
-Cell[67869, 1446, 27303, 474, 341, "Output",ExpressionUUID->"efc9c0d0-8612-4e3c-a7e1-a33f9c06e115"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[95209, 1925, 839, 23, 91, "Code",ExpressionUUID->"4aac030a-0a17-4a9e-b976-cf2cebd20ed6"],
-Cell[96051, 1950, 230, 5, 40, "Output",ExpressionUUID->"77e82e59-25ba-49bf-8b7e-860f57911866"],
-Cell[96284, 1957, 235, 5, 40, "Output",ExpressionUUID->"7efa653f-5c98-4788-a0f9-f9209d419b4f"]
+Cell[11858, 258, 927, 15, 38, "Print",ExpressionUUID->"7fb64364-0ce5-42ac-8f00-de20491a5ab3"],
+Cell[12788, 275, 942, 15, 38, "Print",ExpressionUUID->"89b1f185-6cfb-4c48-a592-d192055a46da"],
+Cell[13733, 292, 212, 6, 38, "Echo",ExpressionUUID->"33ac1d79-60f3-45f4-a2ef-6bac9fc6b491"],
+Cell[13948, 300, 944, 15, 38, "Print",ExpressionUUID->"4c9a1877-9140-40df-8ab4-6821d4c7aa43"],
+Cell[14895, 317, 345, 8, 38, "Echo",ExpressionUUID->"907a437b-57ea-42fd-a0b4-6e1c2701e786"],
+Cell[15243, 327, 929, 15, 38, "Print",ExpressionUUID->"4636a5e7-ccfa-4423-a0a3-d78d26406f45"],
+Cell[16175, 344, 160, 3, 38, "Echo",ExpressionUUID->"c78ac753-b1b3-441e-8346-4a31f2c5ffbc"],
+Cell[16338, 349, 938, 15, 38, "Print",ExpressionUUID->"ceb3e819-740c-411f-8667-c24cd46e3d81"],
+Cell[17279, 366, 258, 7, 38, "Echo",ExpressionUUID->"c310c2cd-c158-476e-a56f-68a1de134143"],
+Cell[17540, 375, 212, 6, 38, "EchoTiming",ExpressionUUID->"32e8f85f-7d39-4c25-8927-ddba9351b3c9"],
+Cell[17755, 383, 930, 15, 38, "Print",ExpressionUUID->"ea16cc6a-311f-4590-a4b8-ac8776273995"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[96568, 1968, 322, 5, 101, "Section",ExpressionUUID->"03cba84f-a33b-4c04-b35e-54b215bffa6d"],
-Cell[CellGroupData[{
-Cell[96915, 1977, 13824, 299, 2481, "Code",ExpressionUUID->"afe5a2a6-c413-49ab-9d52-d446ff0bf8d4"],
-Cell[110742, 2278, 213, 6, 38, "EchoTiming",ExpressionUUID->"869f923f-a089-4ba7-8b86-42c0b954f63e"]
+Cell[18734, 404, 1357, 29, 179, "Code",ExpressionUUID->"07981432-12d5-4c52-9319-afa4f17d5b8e"],
+Cell[20094, 435, 16083, 404, 1115, "Output",ExpressionUUID->"cb6982fa-7ec0-4b6b-a305-7c10113d6516"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[110992, 2289, 343, 7, 54, "Code",ExpressionUUID->"3e2fa93b-abc7-4f34-8848-9e94230a7dec"],
-Cell[111338, 2298, 21221, 503, 347, "Output",ExpressionUUID->"44533c4e-b296-4bd9-b618-18ce7423810d"]
+Cell[36214, 844, 718, 16, 54, "Code",ExpressionUUID->"df74f3be-4f72-4796-ae7b-51acf8847dfb"],
+Cell[36935, 862, 17245, 307, 343, "Output",ExpressionUUID->"8a339f56-cea1-4493-bbe6-54a6bd0838c9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[54217, 1174, 528, 12, 54, "Code",ExpressionUUID->"800386a4-5841-4d13-888b-baf0da8ed2b7"],
+Cell[54748, 1188, 27303, 474, 341, "Output",ExpressionUUID->"efc9c0d0-8612-4e3c-a7e1-a33f9c06e115"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[82088, 1667, 839, 23, 91, "Code",ExpressionUUID->"4aac030a-0a17-4a9e-b976-cf2cebd20ed6"],
+Cell[82930, 1692, 230, 5, 40, "Output",ExpressionUUID->"77e82e59-25ba-49bf-8b7e-860f57911866"],
+Cell[83163, 1699, 235, 5, 40, "Output",ExpressionUUID->"7efa653f-5c98-4788-a0f9-f9209d419b4f"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[132608, 2807, 159, 3, 101, "Section",ExpressionUUID->"f4c4515f-3015-4066-832e-4dbefcfc602d"],
+Cell[83447, 1710, 322, 5, 101, "Section",ExpressionUUID->"03cba84f-a33b-4c04-b35e-54b215bffa6d"],
 Cell[CellGroupData[{
-Cell[132792, 2814, 249, 4, 54, "Code",ExpressionUUID->"b8dbd5bb-a4cc-4a77-9d6a-f98f47671606"],
-Cell[133044, 2820, 269, 4, 40, "Output",ExpressionUUID->"fe605927-a76c-474d-a2e1-64c92958a57a"]
+Cell[83794, 1719, 12649, 265, 2388, "Code",ExpressionUUID->"afe5a2a6-c413-49ab-9d52-d446ff0bf8d4"],
+Cell[96446, 1986, 213, 6, 38, "EchoTiming",ExpressionUUID->"f9714f18-5550-4d04-9421-80809c6da1f1"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[133350, 2829, 256, 4, 54, "Code",ExpressionUUID->"e8d9d9ea-095e-4e2b-8a9a-1933aa90c76a"],
-Cell[133609, 2835, 240, 3, 40, "Output",ExpressionUUID->"c303c08f-555b-45fe-a631-f25e979c4d33"]
+Cell[96696, 1997, 343, 7, 54, "Code",ExpressionUUID->"3e2fa93b-abc7-4f34-8848-9e94230a7dec"],
+Cell[97042, 2006, 21293, 503, 347, "Output",ExpressionUUID->"d56227cb-6b6b-42b4-a619-89afe97ad421"]
+}, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[133886, 2843, 17371, 395, 2317, "Code",ExpressionUUID->"d4b94b30-6eae-420c-989d-a19836cb0ed6"],
+Cell[118384, 2515, 159, 3, 101, "Section",ExpressionUUID->"f4c4515f-3015-4066-832e-4dbefcfc602d"],
+Cell[118546, 2520, 4357, 76, 86, "Code",ExpressionUUID->"d0a1d77c-1781-484e-ae18-e786167dbf85"],
 Cell[CellGroupData[{
-Cell[151282, 3242, 144, 3, 38, "EchoTiming",ExpressionUUID->"66e6f279-9e91-4373-b57f-7f17a89f5348"],
-Cell[151429, 3247, 145, 3, 38, "EchoTiming",ExpressionUUID->"3feff108-25ff-4878-afa6-f87ddcf06db7"],
-Cell[151577, 3252, 143, 3, 38, "EchoTiming",ExpressionUUID->"efc2b046-738a-44f4-bbd1-337421c24a40"],
-Cell[151723, 3257, 144, 3, 38, "EchoTiming",ExpressionUUID->"59598120-f1ac-48f0-a10c-d25408dd40b7"],
-Cell[151870, 3262, 144, 3, 38, "EchoTiming",ExpressionUUID->"cf3c8a5e-3cd0-41c1-b937-3d1757a67369"]
+Cell[122928, 2600, 288, 6, 54, "Code",ExpressionUUID->"7f89f8c3-6d36-44f1-bbf0-8ab6c832059a"],
+Cell[123219, 2608, 236, 5, 40, "Output",ExpressionUUID->"3dff6637-ee51-40f9-b9b7-f0c7fb184a1e"]
 }, Open  ]],
-Cell[152029, 3268, 2279632, 37696, 350, 2244978, 37127, "CachedBoxData", "BoxData", "Output",ExpressionUUID->"a3d67799-1767-4467-ae77-913de0f2095e"],
-Cell[2431664, 40966, 191, 2, 40, "Output",ExpressionUUID->"d129a291-2e5c-4b89-9b8a-c82c309cc50d"]
+Cell[CellGroupData[{
+Cell[123492, 2618, 286, 5, 54, "Code",ExpressionUUID->"b8bce0be-bd85-4453-9842-4f6b28a069a8"],
+Cell[123781, 2625, 192, 2, 40, "Output",ExpressionUUID->"76733e08-a275-4dbe-8584-b71478399a87"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[124010, 2632, 385, 9, 54, "Code",ExpressionUUID->"b8dbd5bb-a4cc-4a77-9d6a-f98f47671606"],
+Cell[124398, 2643, 269, 4, 40, "Output",ExpressionUUID->"fe605927-a76c-474d-a2e1-64c92958a57a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[124704, 2652, 471, 10, 54, "Code",ExpressionUUID->"e8d9d9ea-095e-4e2b-8a9a-1933aa90c76a"],
+Cell[125178, 2664, 358, 7, 43, "Output",ExpressionUUID->"7db047f3-a0a2-4b3a-a035-61614bf31aa3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[125573, 2676, 17371, 395, 2317, "Code",ExpressionUUID->"d4b94b30-6eae-420c-989d-a19836cb0ed6"],
+Cell[CellGroupData[{
+Cell[142969, 3075, 144, 3, 38, "EchoTiming",ExpressionUUID->"66e6f279-9e91-4373-b57f-7f17a89f5348"],
+Cell[143116, 3080, 145, 3, 38, "EchoTiming",ExpressionUUID->"3feff108-25ff-4878-afa6-f87ddcf06db7"],
+Cell[143264, 3085, 143, 3, 38, "EchoTiming",ExpressionUUID->"efc2b046-738a-44f4-bbd1-337421c24a40"],
+Cell[143410, 3090, 144, 3, 38, "EchoTiming",ExpressionUUID->"59598120-f1ac-48f0-a10c-d25408dd40b7"],
+Cell[143557, 3095, 144, 3, 38, "EchoTiming",ExpressionUUID->"cf3c8a5e-3cd0-41c1-b937-3d1757a67369"]
+}, Open  ]],
+Cell[143716, 3101, 2279632, 37696, 350, 2244978, 37127, "CachedBoxData", "BoxData", "Output",ExpressionUUID->"a3d67799-1767-4467-ae77-913de0f2095e"],
+Cell[2423351, 40799, 191, 2, 40, "Output",ExpressionUUID->"d129a291-2e5c-4b89-9b8a-c82c309cc50d"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
