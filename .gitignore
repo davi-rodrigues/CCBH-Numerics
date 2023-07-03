@@ -5,7 +5,7 @@
 *.mx
 
 # PDFs 
-*.pdf
+# *.pdf
 
 #OLD folder
 OLD/
