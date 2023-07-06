@@ -15,9 +15,9 @@ There are four independent notebooks:
 * `CCBH-PLPP-FormationPDF` - Finds the modified-PLPP distribution for m1. It also includes probability evaluations with variable minimal mass. If in doubt, start here.
 * `CCBH-PLPP-FormationPDFforM2` - Finds the modified-PLPP distribution for m2.
 * `CCBH-PLPP-ExclusionPlots` - Generates the exclusion plots.
-* `CCBH-PLPP-ParameterDependenceTest` - Considers random selection of PLPP parameters in according with the GWTC-3 parameter distribution. 
+* `CCBH-PLPP-ParameterDependenceTest` - Considers random selection of PLPP parameters in accordance with the GWTC-3 parameter distribution. 
 
-All the notebooks are provided in `nb` format (convenient for those with a Mathematica installation) and a `wl` file that can be read as plain text and executed in different environments, like Jupyter notebooks. To execute load a `wl` file in a Jupyter notebook use [Mathematica Engine](https://www.wolfram.com/engine/) and [Wolfram Language for Jupyter](https://github.com/WolframResearch/WolframLanguageForJupyter). To execute the `wl` files, first move them to the root folder of the CCBH-PLPP code.
+All the notebooks are provided in `nb` and `wl` formats. The former runs in the official Mathematica notebook, the latter can be read as plain text and executed in different environments, like Jupyter notebooks. To execute load a `wl` file in a Jupyter notebook use [Mathematica Engine](https://www.wolfram.com/engine/) and [Wolfram Language for Jupyter](https://github.com/WolframResearch/WolframLanguageForJupyter). To execute the `wl` files, first move them to the root folder of the CCBH-PLPP code.
 
 ### `codes` folder
 Contains five `wl` files that are called by the notebooks when needed:
