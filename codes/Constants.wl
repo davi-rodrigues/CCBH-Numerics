@@ -1,8 +1,6 @@
-(* ::Package:: *)
-
 (*
   Constants.wl
-  This code is part of CCBHminMass-PLPP
+  This code is part of CCBH-PLPP
   Davi C. Rodrigues (2023)
 *)
 
@@ -44,8 +42,7 @@ optionstkw = {
 
 Clear[baseSimPoints, proportionalBaseSimPoints];
 proportionalBaseSimPoints[tdmin_, tdmax_] = Round[(tdmax - tdmin)/(tdmax0 - tdmin0/10) baseSimPoints]; 
-(*The maximum number of realizations is baseSimPoints, 
-but this number can get smaller proportionally to tdmax - tdmin. *)
+(*The maximum number of realizations get smaller proportionally to tdmax - tdmin. The purpose here is improving performance by avoiding unnecessary computations. For the reference value parameters, the number of realizations is slightly larger than baseSimPoints.*)
 
 $HistoryLength = 5; (*Reduces memory usage*)
 

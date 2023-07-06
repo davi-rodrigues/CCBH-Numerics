@@ -11,17 +11,11 @@
   **************
 *)
 
-
-(*Events and classification from 2112.06861, only events with FAR < 0.25 / year:*)
-datasetGWpop = Import[FileNameJoin[{pathIn, "GWlistPopulation.csv"}], "Dataset"];
-
-(*The extended version considers events with FAR < 1/year*)
-datasetGWpopExtended = Import[FileNameJoin[{pathIn, "GWlistPopulationExtended.csv"}],"Dataset"];
+(*Events and classification from 2111.03634 with FAR < 1/year*)
+datasetGWpop = Import[FileNameJoin[{pathIn, "GWlistPopulationExtended.csv"}],"Dataset"];
 
 (*GWTC-3, data from https://www.gw-openscience.org/eventapi/html/GWTC/:*)
 datasetGWTC = Import[FileNameJoin[{pathIn, "GWTC.csv"}], "Dataset", "HeaderLines"->{1,1}];
-
-datasetGWpop = datasetGWpopExtended; (*Only uses the extended version*)
 
 
 (*
@@ -122,89 +116,15 @@ dataGWexport = datasetGWTrelev[All,
   ******************************************
 *)
 
-(* mzListPlot[x__] := ListPlot[x, 
-  PlotRange->All, 
-  Axes -> False, 
-  Frame -> True, 
-  PlotMarkers->Graphics[{Black, Opacity[0.6],Disk[]}, ImageSize -> 11, ImagePadding->1], 
-  IntervalMarkersStyle-> {Opacity[0.5],Darker@Blue},
-  ImageSize->500, 
-  GridLines->Automatic, 
-  GridLinesStyle->Dotted,
-  FrameTicksStyle->Directive[FontFamily->"Times New Roman",FontSize->17, FontColor -> "Black"],
-  Background -> White
-]; *)
-
-(* plot1=datasetGWTrelev[All, {"redshift", "mass_1_source"}]//Values // mzListPlot;
-plot2 = mzListPlot[datasetGWTrelev[All, {"redshift", "mass_2_source"}]//Values , 
-  PlotMarkers->Graphics[{Blue, Opacity[0.6],Disk[]}, ImageSize -> 11, ImagePadding->1]
-]; *)
-(* Show[plot1,plot2] *)
-
-
-(*
-  From this point, the m2 masses will not be used.
-  To include m2 masses, uncomment the mXzData2 code part below.
-*)
-
 mXzData1 = datasetGWTrelev[All, {"redshift", "redshift_lower","redshift_upper", "mass_1_source","mass_1_source_lower", "mass_1_source_upper"}][Values, Values] // Normal;
 mXzDataForPlotting1 = {Around[#1, {#2, #3}], Around[#4, {#5, #6}]} & @@@ mXzData1;
 
-(*For mXzData2, we Do NOT remove the NS data from the BHNS event, use Delete[...., posBHNSselectLines] to do that.*)
+(*For mXzData2, we Do NOT at this point remove the NS data from the BHNS event, use Delete[...., posBHNSselectLines] to do that.*)
 
 mXzData2= datasetGWTrelev[All, {"redshift", "redshift_lower","redshift_upper" , "mass_2_source","mass_2_source_lower", "mass_2_source_upper"}][Values, Values] // Normal;
 mXzDataForPlotting2= {Around[#1,{#2, #3}],Around[#4,{#5,#6}]}& @@@ mXzData2;
-(* mXzDataForPlotting = Join[mXzDataForPlotting1,mXzDataForPlotting2]; *)
 
+Echo[Length @ mXzDataForPlotting1, "Number of m1 black holes: "];
 
-mXzDataForPlotting = mXzDataForPlotting1; (*Selects only m1 data.*)
-(*plotZxM = mzListPlot[
-  mXzDataForPlotting, 
-  (* FrameLabel-> {Style["z", FontFamily->"Times", 20, Italic], Style["M", FontFamily->"Times", 20, Italic]}, *) (*Labels will be generated in the tex file*)
-  IntervalMarkersStyle -> {Opacity[0.3], Gray},
-  PlotRange-> {{-0.01,1.0},{-1, 110}}
-]; *)
-Echo[Length @ mXzDataForPlotting, "Number of m1 black holes: "];
-
-(* Print[plotZxM]; *)
-
-
-(*
-  DATA BINNING AND PLOTTING (probably unnecessary)
-  *************************
-*)
-
-(* I will consider bins of size 0.12, which is about the median value of the uncertainties.*)
-
-binWidth = 0.125;
-
-bin1 = Select[mXzDataForPlotting , #[[1,1]] < binWidth & ] // Sort;
-bin[1] = bin1;
-bin[i_] := Select[mXzDataForPlotting, binWidth (i-1)< #[[1,1]] < binWidth i & ] // Sort ;
-
-listBins = {1,2,3,4,5,6, 8}; (*The bin numbers that have data *)
-
-(* OLD approach: does not use the observational errors and considers StandardDeviation for the uncertainties:
-  binCentral[i_]:=bin[i][[All,1;;2,1]]; (*It is bin[i], but without the uncertanties*)
-  listBinnedMass = Mean[binCentral[#]] & /@ listBins;
-
-  listStd=(StandardDeviation[binCentral[#]] & /@ Drop[listBins, -1] )[[All,2]]; 
-  (*Since bin[7] only has one data point, StandardDeviation cannot be applied to it, that's why a Drop is used.*)
-  listStd = Append[listStd, Mean[bin[7][[1, 2, 2]]]];
-  (*In the above, the corresponding StandardDeviation for bin[7] is taken to be the Mean of the upper and lower uncertainties.*)
-
-  binnedDataWerrors = MapThread[{#1[[1]], Around[#1[[2]], #2]} & , {listBinnedMass, listStd}];
-*)
-
-binnedDataWerrors = {First @ Mean[bin[#][[All, 1]]],  Mean[bin[#][[All, 2]]]} & /@ listBins; (* MeanAround provides a weighted evaliation of the mean. 
-For Mean and MeanAround, error bars show the error on the mean (assuming that there is a common value for all these data), not the data dispersion*)
-
-plotZxMbinned = mzListPlot[
-  binnedDataWerrors, 
-  PlotMarkers -> Graphics[{Red,Opacity[0.6],Thickness[0.15],Circle[]}, ImageSize -> 17, ImagePadding->2], 
-  IntervalMarkersStyle -> {Opacity[1],Thickness[0.002], Red}, 
-  Joined -> True, 
-  PlotStyle -> {Thickness[0.002], Red}
-];
 
 

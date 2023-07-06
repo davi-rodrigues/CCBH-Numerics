@@ -50,6 +50,15 @@ zFormation[zObs_?NumberQ, delayTime_?NumberQ, zMax_, w_] := If[
 
 isComputeTableZformation = False; (*Change to True to compute and regenerate the mx file. About 10 min.*)
 
+(*Even if the above is False, the table is computed in case the file tableZformation.mx does not exist.*)
+If[
+   FileExistsQ[FileNameJoin[{pathAux, "tableZformation.mx"}]],
+   Null,
+   (*else*)
+   Echo["File tableZformation.mx not found. It will be computed."];
+   isComputeTableZformation = True
+];
+
 If[isComputeTableZformation, 
   Echo["Computing tableZformation..."];
   tableZformation = ParallelTable[
