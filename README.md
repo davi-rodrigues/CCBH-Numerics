@@ -20,7 +20,7 @@ There are four independent notebooks:
 All the notebooks are provided in `nb` and `wl` formats. The former runs in the official Mathematica notebook, the latter can be read as plain text and executed in different environments, like Jupyter notebooks. To execute load a `wl` file in a Jupyter notebook use [Mathematica Engine](https://www.wolfram.com/engine/) and [Wolfram Language for Jupyter](https://github.com/WolframResearch/WolframLanguageForJupyter). To execute the `wl` files, first move them to the root folder of the CCBH-PLPP code.
 
 ### `codes` folder
-Contains five `wl` files that are called by the notebooks when needed:
+Contains six `wl` files that are called by the notebooks when needed:
 * `directories` - define functions for file manipulation.
 * `ObsDataPreparationGWTC-3` - load and prepare the GWTC-3 events for analysis.
 * `Constants` - defines constants that are relevat for cosmology, the delay-time distribution and other computational parameters.
