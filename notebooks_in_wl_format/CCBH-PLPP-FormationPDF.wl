@@ -32,7 +32,7 @@
 
 
 SetDirectory[NotebookDirectory[]];
-<<"Directories.wl";
+Get[FileNameJoin[{"codes", "Directories.wl"}]];
 
 (*
   Calling wl files
@@ -63,7 +63,7 @@ outSigma[n_] := outSigma[n] = NProbability[Abs[x] > n, x\[Distributed]NormalDist
 
 
 
-(* ::Section::Closed:: *)
+(* ::Section:: *)
 (*Table and plot on observational data*)
 
 

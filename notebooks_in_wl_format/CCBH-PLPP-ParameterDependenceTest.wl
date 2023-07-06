@@ -29,7 +29,7 @@
 
 
 SetDirectory[NotebookDirectory[]];
-<<"Directories.wl";
+Get[FileNameJoin[{"codes", "Directories.wl"}]];
 
 (*
   Calling wl files
@@ -39,10 +39,8 @@ SetDirectory[NotebookDirectory[]];
 getCode["Constants.wl"];
 baseSimPoints = 5 10^5; (*The base number of points to be simmulated for each dimension, commonly 10^5-10^7, depends on the purpose.*)
 
-(*getCode["ObsDataPreparationGWTC-3.wl"];*) (*Not essential for this notebook*)
 getCode["PowerLawPlusPeakDefinition.wl"];
 getCode["Cosmology.wl"];
-(*getCode["MassFactorCorrection.wl"];*) (*This notebook requires a modified version.*)
 
 Print["End of running wl files."];
 

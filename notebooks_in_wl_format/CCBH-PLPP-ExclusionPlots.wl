@@ -29,7 +29,7 @@
 
 
 SetDirectory[NotebookDirectory[]];
-<<"Directories.wl";
+Get[FileNameJoin[{"codes", "Directories.wl"}]];
 
 (*
   Calling Code files
