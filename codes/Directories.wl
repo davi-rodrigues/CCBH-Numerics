@@ -9,7 +9,7 @@
   DIRECTORY STRUCTURE
   *******************
 *)
-pathBase = NotebookDirectory[];
+pathBase = Directory[];
 pathOut = FileNameJoin[{pathBase, "output"}];
 pathIn =  FileNameJoin[{pathBase, "input"}];
 pathAux = FileNameJoin[{pathBase, "auxiliary"}];
