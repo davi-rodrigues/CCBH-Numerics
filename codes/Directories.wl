@@ -33,8 +33,10 @@ dumpsave[fileName_, variable_] := (
 
 getAux[fileName_] := Get[FileNameJoin[{pathAux, fileName}]];
 
+getIn[fileName_] := Get[FileNameJoin[{pathIn, fileName}]];
+
 getCode[fileName_] := (
-  Print["Starting "<>ToString[fileName]<> ": "]; 
+  Print[Style["Starting "<>ToString[fileName]<> ": ", FontColor -> LightGray]]; 
   Get[FileNameJoin[{pathCodes, fileName}]]
 );
 

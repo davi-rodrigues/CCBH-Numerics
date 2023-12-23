@@ -2,6 +2,10 @@
 
 Davi C. Rodrigues (UFES, Brazil & Heidelberg University, Germany)
 
+THIS README FILE NEEDS TO BE UPDATED.
+
+THIS VERSION REQUIRES Git Large File Storage (LFS): https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage
+
 This code was used for the paper `Constraints on cosmologically coupled black holes from gravitational wave observations and minimal formation mass` by Amendola, Rodrigues, Kumar & Quartin [[arXiv 2307.02474]](https://arxiv.org/abs/2307.02474). It was used in all PLPP-method applications, which is the method based on the power-law-plus-peak distribution.  See also the [Direct method](https://github.com/itpamendola/CCBH-direct) code.
 
 **Quick start**: clone the repository in your machine (or download the full zip file) and run one of the notebooks. Try starting with `CCBH-PLPP-FormationPDF`.  

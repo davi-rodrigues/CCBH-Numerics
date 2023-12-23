@@ -35,9 +35,9 @@ ClearAll[
 
 Echo[baseSimPoints, "Base number of simmulated points per dimension (baseSimPoints): "];
 
-listDelayTime = Range[tdmin0/10, tdmax0, 0.015]; (* delayTime values to be computed. tdmin lower than tdmin0 will be considered*)
+(* listDelayTime = Range[tdmin0/10, tdmax0, 0.015]; (* delayTime values to be computed. tdmin lower than tdmin0 will be considered*)
 listzObs = Range[0.0, 1.0, 0.01];
-listw = Range[-1.5, -0.5, 0.1]; 
+listw = Range[-1.5, -0.5, 0.1];  *)
 
 minDelayTime = First[listDelayTime]; (*min delay time to be computed, it can be lower than tdmin0*)
 maxDelayTime[zObs_, tdmax_?NumberQ, zMax_?NumberQ, w_] := maxDelayTime[zObs, tdmax, zMax, w] = Min[

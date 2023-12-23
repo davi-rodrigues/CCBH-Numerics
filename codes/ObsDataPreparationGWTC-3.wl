@@ -14,7 +14,7 @@
 (*Events and classification from 2111.03634 with FAR < 1/year*)
 datasetGWpop = Import[FileNameJoin[{pathIn, "GWlistPopulationExtended.csv"}],"Dataset"];
 
-(*GWTC-3, data from https://www.gw-openscience.org/eventapi/html/GWTC/:*)
+(*GWTC-3, data from https://www.gw-openscience.org/eventapi/html/GWTC *)
 datasetGWTC = Import[FileNameJoin[{pathIn, "GWTC.csv"}], "Dataset", "HeaderLines"->{1,1}];
 
 

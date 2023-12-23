@@ -78,7 +78,13 @@ piUnnorm[m_, OptionsPattern[plpp]] = Block[
   },
   10^3 ((1 - lV) b[m, aV, mMinV, mMaxV] + lV PDF[NormalDistribution[muV, sV], m]) smoothing[m, mMinV, mMaxV, dmV]
 ];
-piNorm[opts:OptionsPattern[plpp]] := piNorm[opts] = 1/NIntegrate[piUnnorm[m, opts], {m, 0,OptionValue@mMax}];
+piNorm[opts:OptionsPattern[plpp]] := piNorm[opts] = 1/NIntegrate[
+  piUnnorm[m, opts], 
+  {m, 0, OptionValue@mMax},
+  AccuracyGoal -> Infinity,
+  PrecisionGoal -> 5,
+  MaxRecursion -> 15
+];
 pi[m_, opts:OptionsPattern[plpp]] := pi[m, opts] = piNorm[opts] piUnnorm[m, opts];
 
 Clear[dist, \[ScriptCapitalD]];
