@@ -1,4 +1,4 @@
-# Cosmological coupled black holes and the power-law-plus-peak distribution (CCBH-PLPP)
+# Cosmological Coupled Black Holes and Minimum Mass: Numerics
 
 Davi C. Rodrigues (UFES, Brazil & Heidelberg University, Germany)
 
