@@ -1,14 +1,24 @@
 # Mac files
 .DS_Store
 
-# Mathematica mx files. These are large binary files that can be regenerated locally
-*.mx
+# Mathematica mx files.
+#*.mx
 
-# PDFs 
-# *.pdf
+# Backups of auxiliary files
+auxiliary/AuxBackUp
 
 #OLD folder
 OLD/
+
+#testing folder
+testing/
+
+#h5 folder
+input/lvk_posteriors_h5/
+
+#lvk_posteriors_old
+#input/lvk_posteriors_old/
+
 
 #### Below files were generated automatically for Python projects
 
