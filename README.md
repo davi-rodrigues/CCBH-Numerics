@@ -47,5 +47,5 @@ All the notebooks (in `nb` format) are independent among themselves. Each of the
 ### Large files - Git LFS
 This repository includes a few large files with extensions `h5` or `mx` that are provided for convinience but that are not essential. The largest is about 100 MBs. The largest files depend on [Git Large File Storage (LFS)](https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage). If you use github desktop, everything should be handled automatically.
 
-# Acknowledgements
+## Acknowledgements
 I acknowledge support from Federal University of Espirito Santo (Brazil), Heidelberg University (Germany), CNPq (Brazil) and FAPES (Brazil).
