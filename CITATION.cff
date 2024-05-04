@@ -1,26 +1,24 @@
 cff-version: 1.2.0
 title: CCBH-Numerics
-message: >-
-  If you use this software, please cite the Zenodo record (Davi C. Rodrigues, CCBH-Numerics, Zenodo, DOI: 10.5281/zenodo.11112984 (2024)) 
-  and the corresponding MNRAS (2024) paper DOI: 10.1093/mnras/stae143.
+message: "If you use this software, please cite the Zenodo record (Davi C. Rodrigues, CCBH-Numerics, Zenodo, DOI: 10.5281/zenodo.11112984 (2024)) 
+  and the corresponding MNRAS (2024) paper DOI: 10.1093/mnras/stae143."
 type: software
 authors:
   - given-names: Davi C.
     family-names: Rodrigues
-    orcid: 'https://orcid.org/0000-0003-1683-5443'
+    orcid: "https://orcid.org/0000-0003-1683-5443"
 identifiers:
   - type: doi
-    value: '10.5281/zenodo.11112984'
+    value: "10.5281/zenodo.11112984"
     description: Zenodo
   - type: url
-    value: 'https://arxiv.org/abs/2307.02474'
+    value: "https://arxiv.org/abs/2307.02474"
     description: arXiv
   - type: doi
-    value: 'https://doi.org/10.1093/mnras/stae143'
+    value: "https://doi.org/10.1093/mnras/stae143"
     description: MNRAS (2024)
-repository-code: 'https://github.com/davi-rodrigues/ccbh-numerics'
-abstract: >-
-  Using gravitational wave data, CCBH-Numerics computes the probability of the existence of a single cosmologically coupled black hole with a formation mass below a specified threshold. This tool was developed alongside the paper by Amendola, Rodrigues, Kumar, and Quartin, published in MNRAS in 2024.
+repository-code: "https://github.com/davi-rodrigues/ccbh-numerics"
+abstract: "Using gravitational wave data, CCBH-Numerics computes the probability of the existence of a single cosmologically coupled black hole with a formation mass below a specified threshold. This tool was developed alongside the paper by Amendola, Rodrigues, Kumar, and Quartin, published in MNRAS in 2024."
 license: MIT
 version: v2.0.2
 date-released: '2024'
