@@ -1,4 +1,5 @@
 <a href="https://ascl.net/2402.004"><img src="https://img.shields.io/badge/ascl-2402.004-blue.svg?colorB=262255" alt="ascl:2402.004" /></a>
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11112984.svg)](https://doi.org/10.5281/zenodo.11112984)
 
 # Cosmologically-coupled-black-holes formation mass: Numerics (CCBH-Numerics)
 
