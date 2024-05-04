@@ -10,7 +10,7 @@ authors:
     orcid: 'https://orcid.org/0000-0003-1683-5443'
 identifiers:
   - type: doi
-    value: XXXXXXXX
+    value: '10.5281/zenodo.11112984'
     description: Zenodo
   - type: url
     value: 'https://arxiv.org/abs/2307.02474'
