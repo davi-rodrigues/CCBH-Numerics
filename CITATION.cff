@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 title: CCBH-Numerics
 message: >-
-  If you use this software, please cite it using the
-  metadata from this file.
+  If you use this software, please cite the Zenodo record (Davi C. Rodrigues, CCBH-Numerics, Zenodo, DOI: 10.5281/zenodo.11112984 (2024)) 
+  and the corresponding MNRAS (2024) paper DOI: 10.1093/mnras/stae143.
 type: software
 authors:
   - given-names: Davi C.
