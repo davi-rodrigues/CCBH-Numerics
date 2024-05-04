@@ -5,8 +5,8 @@ message: >-
   metadata from this file.
 type: software
 authors:
-  - given-names: Davi
-    family-names: C. Rodrigues
+  - given-names: Davi C.
+    family-names: Rodrigues
     orcid: 'https://orcid.org/0000-0003-1683-5443'
 identifiers:
   - type: doi
